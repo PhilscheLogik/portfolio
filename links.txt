@@ -3,3 +3,10 @@ https://www.figma.com/design/pY90RqZtzQscbSa4rbQpTP/Portfolio-Designs?node-id=33
 https://www.figma.com/design/eqUOC0Fh2PuKwG4x0kUFHh/Portfolio?node-id=135-184&p=f&m=dev
 
 https://www.figma.com/design/qaO6bsto1TSRNDBMIxNdZN/Portfolio?node-id=5001-4597&p=f&t=RzEQYq0qYvc4LdqC-0
+
+
+Header -> im Desktop Version ist es fixed, aber in der Mobile Version nicht (Version 2; Claudia Fohrer)
+Header -> in der Desktop Version werden die Nav Elemente beim Klicken markiert, aber wenn man nach unten scrollt, ändern sie sich nicht (Version 2; Claudia Fohrer)
+Impressum -> imprint bzw. Impressum nicht gefunden (Version 2; Claudia Fohrer)
+
+bisherige Wahl (Version 2; Claudia Fohrer): https://www.figma.com/design/qaO6bsto1TSRNDBMIxNdZN/Portfolio?node-id=2183-3681&t=bIIEuKwdR2E35tRR-0
