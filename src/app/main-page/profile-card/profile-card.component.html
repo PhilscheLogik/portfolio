@@ -1,25 +1,22 @@
 <section class="landing-section">
   <section class="profile-photo">
-    <div class="image-section">
-      @if(showImage){
+    <div
+      class="image-section"
+      (mouseover)="showImage = true"
+      (mouseout)="showImage = false"
+    >
       <img
-        (mouseover)="showImage = true"
-        (mouseout)="showImage = false"
-        class="background hover"
+        class="background hover rotation"
         [class.visible]="showImage"
         src="./assets/img/profile_card/background_profile/hover.png"
         alt="background hover"
       />
-      } @else {
       <img
         class="background init"
         [class.visible]="!showImage"
-        (mouseover)="showImage = true"
-        (mouseout)="showImage = false"
         src="./assets/img/profile_card/background_profile/init.png"
         alt="background init"
       />
-      }
       <img
         class="myself"
         src="./assets/img/profile_card/myself/myself2.png"
@@ -29,20 +26,54 @@
   </section>
 
   <section class="title-section">
-    <div>
-      LOGO
+    <div class="logo-section">
+      <div
+        class="logo-picture"
+        (mouseover)="showLogo = true"
+        (mouseout)="showLogo = false"
+      >
+        <img
+          class="background hover"
+          [class.visible]="showLogo"
+          src="./assets/img/logo/logo_icon_full.png"
+          alt="logo"
+        />
+
+        <img
+          class="background init"
+          [class.visible]="!showLogo"
+          src="./assets/img/logo/logo_icon.png"
+          alt="logo"
+        />
+      </div>
+
       <div>
         <p>P. Franke</p>
         <p><span>developer</span></p>
       </div>
     </div>
 
-    <div>
+    <div class="overshoot-section">
       <h1>Philipp Franke</h1>
       <h2>FRONTEND DEVELOPER</h2>
     </div>
 
-    <div>Pfeil</div>
+    <div
+      class="button"
+      (mouseover)="showButton = true"
+      (mouseout)="showButton = false"
+    >
+      @if(showButton){
+
+      <img
+        src="./../../../assets/img/buttons/button_body_hover.png"
+        alt="button"
+      />
+      } @else {
+      <img src="./../../../assets/img/buttons/button_body.png" alt="button" />
+      }
+      <img src="./../../../assets/img/buttons/arrow_up.png" alt="button" />
+    </div>
   </section>
 
   <section class="icon-section">
@@ -75,6 +106,22 @@
       />
       } @else {
       <img src="./assets/img/social_icons/github_dark.png" alt="github" />
+      }
+    </a>
+
+    <a
+      href="#"
+      target="_blank"
+      (mouseover)="showLinkedIn = true"
+      (mouseout)="showLinkedIn = false"
+    >
+      @if(showLinkedIn){
+      <img
+        src="./assets/img/social_icons/linkedin_lightblue_hover.png"
+        alt="Linked"
+      />
+      } @else {
+      <img src="./assets/img/social_icons/linkedin_dark.png" alt="LinkedIn" />
       }
     </a>
   </section>

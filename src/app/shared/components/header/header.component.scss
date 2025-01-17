@@ -1,7 +1,15 @@
 @import "./../../../../styles.scss";
 
-header{
-    @include posi($b:0); 
-    max-height: 104px;
-}
+header {
+  @include posi($l: 0, $t:800px);
+  min-height: 104px;
+  width: 100%;
 
+  background: $nav-color;
+
+  @include displayFlex();
+
+  nav ul {
+    @include displayFlex();
+  }
+}
