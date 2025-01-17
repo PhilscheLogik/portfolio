@@ -9,4 +9,17 @@ import { Component } from '@angular/core';
 })
 export class ProfileCardComponent {
 
+  showImage: boolean;
+  showGithub: boolean;
+  showMail: boolean;
+
+
+
+  constructor(){
+    this.showImage = false;
+    this.showGithub = false;
+    this.showMail = false;
+  }
+
+
 }

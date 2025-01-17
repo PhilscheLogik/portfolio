@@ -1,7 +1,15 @@
-@mixin displayFlex($fd: row, $jc: center, $ai: center, $gap: 8px) {
+@mixin displayFlex($fd: row, $jc: center, $ai: center, $g: 8px) {
   display: flex;
   flex-direction: $fd;
   justify-content: $jc;
   align-items: $ai;
-  gap: $gap;
+  gap: $g;
+}
+
+@mixin posi($p: absolute, $t: auto, $l: auto, $r: auto, $b: auto) {
+  position: $p;
+  top: $t;
+  left: $l;
+  right: $r;
+  bottom: $b;
 }

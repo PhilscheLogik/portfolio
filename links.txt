@@ -10,3 +10,7 @@ Header -> in der Desktop Version werden die Nav Elemente beim Klicken markiert, 
 Impressum -> imprint bzw. Impressum nicht gefunden (Version 2; Claudia Fohrer)
 
 bisherige Wahl (Version 2; Claudia Fohrer): https://www.figma.com/design/qaO6bsto1TSRNDBMIxNdZN/Portfolio?node-id=2183-3681&t=bIIEuKwdR2E35tRR-0
+
+eigenes Logo
+
+pointer-event none

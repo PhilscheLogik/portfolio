@@ -1,0 +1,7 @@
+@import "./../../../../styles.scss";
+
+header{
+    @include posi($b:0); 
+    max-height: 104px;
+}
+

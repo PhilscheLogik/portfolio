@@ -1,26 +1,81 @@
-<section class="landingPage">
-    <section>
-      <div>
-        LOGO
-        <div>
-          <p>P.Franke</p>
-          <p>developer</p>
-        </div>
-      </div>
-  
-      <div>
-        <h1>Philipp Franke</h1>
-        <h2>FRONTEND DEVELOPER</h2>
-      </div>
-  
-      <div>Pfeil</div>
-    </section>
-  
-    <section>
-      <div>ICH Foto</div>
-      <div>BG Ei blau</div>
-      <div>BG Ei blau anderes deaktiv</div>
-    </section>
-  
-    <section class="icon-section">ICON1 ICON2 ICON3</section>
+<section class="landing-section">
+  <section class="profile-photo">
+    <div class="image-section">
+      @if(showImage){
+      <img
+        (mouseover)="showImage = true"
+        (mouseout)="showImage = false"
+        class="background hover"
+        [class.visible]="showImage"
+        src="./assets/img/profile_card/background_profile/hover.png"
+        alt="background hover"
+      />
+      } @else {
+      <img
+        class="background init"
+        [class.visible]="!showImage"
+        (mouseover)="showImage = true"
+        (mouseout)="showImage = false"
+        src="./assets/img/profile_card/background_profile/init.png"
+        alt="background init"
+      />
+      }
+      <img
+        class="myself"
+        src="./assets/img/profile_card/myself/myself2.png"
+        alt="myself"
+      />
+    </div>
   </section>
+
+  <section class="title-section">
+    <div>
+      LOGO
+      <div>
+        <p>P. Franke</p>
+        <p><span>developer</span></p>
+      </div>
+    </div>
+
+    <div>
+      <h1>Philipp Franke</h1>
+      <h2>FRONTEND DEVELOPER</h2>
+    </div>
+
+    <div>Pfeil</div>
+  </section>
+
+  <section class="icon-section">
+    <a
+      href="mailto:Phil89.Franke@googlemail.com"
+      target="_blank"
+      (mouseover)="showMail = true"
+      (mouseout)="showMail = false"
+    >
+      @if(showMail){
+      <img
+        src="./assets/img/social_icons/mail_lightblue_hover.png"
+        alt="mail"
+      />
+      } @else {
+      <img src="./assets/img/social_icons/mail_dark.png" alt="mail" />
+      }
+    </a>
+
+    <a
+      href="https://github.com/PhilscheLogik"
+      target="_blank"
+      (mouseover)="showGithub = true"
+      (mouseout)="showGithub = false"
+    >
+      @if(showGithub){
+      <img
+        src="./assets/img/social_icons/github_lightblue_hover.png"
+        alt="github"
+      />
+      } @else {
+      <img src="./assets/img/social_icons/github_dark.png" alt="github" />
+      }
+    </a>
+  </section>
+</section>

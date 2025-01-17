@@ -1,14 +1,104 @@
-.landingPage{
-    height: 100vh;
-    max-width: 1440px;
+@import "./../../../styles.scss";
+
+section,
+div {
+  border: 2px solid red;
 }
 
-h1{
-    font-size: 88px;  
-    font-family: anta;  
+.landing-section {
+  height: 100vh;
+  width: 85vw;
+  max-width: 1440px;
+  max-height: 700px;
+  margin-top: 50px;
+
+  @include displayFlex($jc: space-between, $g: 0);
+  @include posi($p: relative);
 }
 
-h2{
-    font-size: 48px;    
+/*-------------*/
+
+.profile-photo {
+  height: 100%;
+  width: 50%;
+  @include displayFlex($g: 0);
+  flex: 1;
 }
 
+.image-section {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  @include displayFlex($g: 0);
+
+  img {
+    background: none;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .background {
+    @include posi();
+    opacity: 0;
+    transition: opacity 10s ease-in-out;
+  }
+
+  .myself {
+    max-height: 90%;
+    max-width: 90%;
+
+    @include posi($t: 50%, $l: 50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .hover.visible {
+    opacity: 1; /* Das Hover-Bild wird sichtbar */
+  }
+
+  .init.visible {
+    opacity: 1; /* Das Initial-Bild wird sichtbar */
+  }
+}
+
+/*-------------*/
+
+.title-section {
+  height: 100%;
+  padding: 0;
+  @include displayFlex($fd: column, $jc: space-around);
+  p {
+    font-family: anta;
+
+    span {
+      font-family: jose;
+      color: $nav-color;
+    }
+  }
+}
+
+h1 {
+  font-size: 88px;
+  font-family: anta;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+/*-------------*/
+
+.icon-section {
+  @include displayFlex($fd: column);
+  @include posi($t: 0, $r: 0);
+  img {
+    width: 30px;
+  }
+}
+
+.icon-part {
+  width: 100%;
+  height: 60px;
+}
