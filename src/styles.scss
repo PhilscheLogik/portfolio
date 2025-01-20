@@ -1,16 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-@import './styles/colors.scss';
-@import './styles/mixins.scss';
+@import "./styles/colors.scss";
+@import "./styles/mixins.scss";
 
-*{
-    margin: 0;
-    padding: 0;
-    background-color: $bg-color;
-    font-family: jose;
-    color: $text-color;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
 
-    
+  font-family: jose;
+  color: $text-color;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
+body {
+  background-color: $bg-color;
+}

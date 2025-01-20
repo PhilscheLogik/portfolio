@@ -1,18 +1,18 @@
 <section class="landing-section">
   <section class="profile-photo">
-    <div
-      class="image-section"
-      (mouseover)="showImage = true"
-      (mouseout)="showImage = false"
-    >
+    <div class="image-section">
       <img
         class="background hover rotation"
+        (mouseover)="showImage = true"
+        (mouseout)="showImage = false"
         [class.visible]="showImage"
         src="./assets/img/profile_card/background_profile/hover.png"
         alt="background hover"
       />
       <img
         class="background init"
+        (mouseover)="showImage = true"
+        (mouseout)="showImage = false"
         [class.visible]="!showImage"
         src="./assets/img/profile_card/background_profile/init.png"
         alt="background init"

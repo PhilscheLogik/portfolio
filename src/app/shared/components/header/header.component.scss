@@ -1,15 +1,57 @@
 @import "./../../../../styles.scss";
 
 header {
-  @include posi($l: 0, $t:800px);
+  @include posi($l: 0, $t: 800px);
   min-height: 104px;
+
   width: 100%;
 
+  font-size: 18px;
   background: $nav-color;
 
   @include displayFlex();
 
+  .header-section {
+    width: 100%;
+    max-width: 1440px;
+    @include displayFlex($jc: space-around);
+  }
+
   nav ul {
-    @include displayFlex();
+    @include displayFlex($jc: space-around);
+    width: 700px;
+
+    li {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      font-size: 26px;
+    }
+
+    a {
+      color: $bg-color;
+      cursor: pointer;
+    }
+
+    a:hover {
+      color: $text-color;
+    }
+  }
+}
+
+.logo-picture {
+  @include displayFlex($fd: column, $g: 0);
+  width: 58px;
+  height: 72px;
+
+  p {
+    font-family: anta;
+    font-size: small;
+
+    span {
+      font-family: jose;
+      color: $bg-color;
+    }
   }
 }
