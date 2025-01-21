@@ -13,10 +13,18 @@
     </div>
     <nav>
       <ul>
-        <li><a>Warum ich</a></li>
-        <li><a>Skills</a></li>
-        <li><a>Projekte</a></li>
-        <li><a>Kontakt</a></li>
+        <li [class.active]="selectedItem === 0" (click)="selectItem(0)">
+          <a>Warum ich</a>
+        </li>
+        <li [class.active]="selectedItem === 1" (click)="selectItem(1)">
+          <a>Skills</a>
+        </li>
+        <li [class.active]="selectedItem === 2" (click)="selectItem(2)">
+          <a>Projekte</a>
+        </li>
+        <li [class.active]="selectedItem === 3" (click)="selectItem(3)">
+          <a>Kontakt</a>
+        </li>
       </ul>
     </nav>
     <div>DE EN</div>

@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  selectedItem: number | null = null;
+
+  selectItem(index: number): void {
+    this.selectedItem = index;
+  }
+
 }

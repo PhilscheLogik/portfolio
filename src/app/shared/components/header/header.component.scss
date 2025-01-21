@@ -25,17 +25,39 @@ header {
       list-style-type: none;
       padding: 0;
       margin: 0;
-
-      font-size: 26px;
-    }
-
-    a {
-      color: $bg-color;
       cursor: pointer;
-    }
+      font-size: 26px;
+      position: relative;
 
-    a:hover {
-      color: $text-color;
+      a {
+        color: $bg-color;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: $text-color;
+      }
+
+      &.active {
+        a {
+          color: $text-color;
+        }
+
+        // Hintergrundbild hinzufügen
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 55%;
+          transform: translate(-50%, -50%);
+          width: 80px;
+          height: 60px;
+          background-image: url("./../../../../assets/img/background_mark/ellipse.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          z-index: 0;
+        }
+      }
     }
   }
 }
@@ -53,5 +75,14 @@ header {
       font-family: jose;
       color: $bg-color;
     }
+  }
+}
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+
+@media (max-width: 1000px) {
+  header {
+    display: none;
   }
 }
