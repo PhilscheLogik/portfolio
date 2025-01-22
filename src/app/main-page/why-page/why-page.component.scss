@@ -2,7 +2,8 @@
 
 section {
   margin-top: 100px;
-  width: 85vw;
+  margin-bottom: 50px;
+  width: 60vw;
   font-family: jose;
 }
 
@@ -11,7 +12,7 @@ h2 {
   text-align: center;
   font-family: anta;
   color: $nav-color;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .location-icon {
@@ -24,13 +25,14 @@ h2 {
 }
 
 .content {
-  @include displayFlex();
+  @include displayFlex($ai: flex-start);
 }
 
 .left {
   @include displayFlex();
   font-size: 30px;
   width: 50%;
+  padding-bottom: 16px;
 
   span {
     color: $nav-color;
@@ -38,12 +40,78 @@ h2 {
 }
 
 .right {
-  @include displayFlex($fd:column);
+  @include displayFlex($fd: column, $jc: flex-end, $ai: flex-end);
   font-size: 18px;
   width: 50%;
+  padding-left: 5%;
+}
 
-  >div{
-    @include displayFlex($fd:column);
+.button {
+  padding: 13px 30px;
+  border-radius: 100px;
+  border: 1px solid $nav-color;
+  color: $nav-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($nav-color, 0.12);
+  }
+}
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+
+@media (max-width: 1305px) {
+  h2 {
+    font-size: 46px;
   }
 
+  .left {
+    font-size: 24px;
+  }
+  .right {
+    font-size: 17px;
+  }
+
+  section {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  .left {
+    font-size: 18px;
+    width: 100%;
+  }
+  .right {
+    font-size: 16px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .location-icon {
+    background-image: url("./../../../assets/img/icons/icon_location_mobil.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 2rem;
+    height: 2.5rem;
+  }
+
+  section {
+    width: 85vw;
+    margin-top: 25px;
+  }
+
+  .content {
+    @include displayFlex($fd: column);
+  }
+
+  .button {
+    display: none;
+  }
 }

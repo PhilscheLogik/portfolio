@@ -11,25 +11,27 @@ Header -> in der Desktop Version werden die Nav Elemente beim Klicken markiert, 
 Impressum -> imprint bzw. Impressum fehlt (Version 2; Claudia Fohrer)
 
 
+NICHT VERGESSEN:
+    - bei der Why-me muss der Button zum Kontakt verbunden werden
+    - bei der Kontakt muss der Button nach ganz oben leiten können
+    - 
 
-21.1.25
 
-    *   
-    *   Interagration Burger Menü(BM)
-    *   wenn BM gedrückt, dann erscheint Div
-    *   BM Div designen
-    *   Header in die BM Div packen
+
+
+
+23.1.25
+
+    *   Arrow down erstellen (einfach bei Lass reden Button kopieren)
+    *   Arrow down verlinken (einfach bei Warum ich orientieren)
+    *   Scroll nach oben beim Logo des Headers
+
     *   Translation anschauen
     *   Translation integrieren
 
+    * Footer design anpassen
 
-
-Umpositionierung und Designänderung des Headers: Burgermenü wird angezeigt, wenn 1000px breite erreicht und Logo wurde farblich angepasst; zweite navbar hinzugefügt
-
-Begonnen why-me Section zu designen; Bug mit dem Burgermenü bei 320px behoben
-
-
-
+      
 
 
 
