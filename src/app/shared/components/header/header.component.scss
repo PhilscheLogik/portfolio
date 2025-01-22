@@ -1,7 +1,17 @@
 @import "./../../../../styles.scss";
 
+.burger,
+.nav-mobile,
+.light {
+  display: none;
+}
+
+.burger {
+  height: 32px;
+  cursor: pointer;
+}
+
 header {
-  @include posi($l: 0, $t: 800px);
   min-height: 104px;
 
   width: 100%;
@@ -83,6 +93,37 @@ header {
 
 @media (max-width: 1000px) {
   header {
+    background: none;
+    @include posi($p: absolute, $t: 16px, $l: 0);
+    min-height: 85px;
+
+    .header-section {
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 85vw;
+    }
+  }
+
+  .nav-fullscreen,
+  .translate,
+  .dark {
     display: none;
+  }
+
+  .light{
+    display: block;
+  }
+
+  .burger {
+    display: inline-block;
+  }
+
+  .logo-picture {
+    p {
+      span {
+        font-family: jose;
+        color: $nav-color;
+      }
+    }
   }
 }

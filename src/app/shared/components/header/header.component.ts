@@ -15,4 +15,13 @@ export class HeaderComponent {
     this.selectedItem = index;
   }
 
+  scrollTo(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView();
+    }
+  }
+
+
+
 }

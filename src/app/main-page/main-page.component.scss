@@ -1,5 +1,5 @@
-@import './../../styles.scss';
+@import "./../../styles.scss";
 
-*{
-    @include displayFlex($fd: colum)
+* {
+  @include displayFlex($fd: colum);
 }

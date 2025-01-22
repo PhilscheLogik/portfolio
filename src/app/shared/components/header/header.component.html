@@ -2,8 +2,13 @@
   <div class="header-section">
     <div class="logo-picture">
       <img
-        class="background init"
+        class="background init dark"
         src="./assets/img/logo/logo_icon_dark.png"
+        alt="logo"
+      />
+      <img
+        class="background init light"
+        src="./assets/img/logo/logo_icon.png"
         alt="logo"
       />
       <div>
@@ -11,9 +16,12 @@
         <p><span>developer</span></p>
       </div>
     </div>
-    <nav>
+    <nav class="nav-fullscreen">
       <ul>
-        <li [class.active]="selectedItem === 0" (click)="selectItem(0)">
+        <li
+          [class.active]="selectedItem === 0"
+          (click)="selectItem(0); scrollTo('why-section')"
+        >
           <a>Warum ich</a>
         </li>
         <li [class.active]="selectedItem === 1" (click)="selectItem(1)">
@@ -27,6 +35,31 @@
         </li>
       </ul>
     </nav>
-    <div>DE EN</div>
+    <div class="translate">DE EN</div>   
+
+    <nav class="nav-mobile">
+      <ul>
+        <li (click)="scrollTo('why-section')">
+          <a>Warum ich</a>
+        </li>
+        <li>
+          <a>Skills</a>
+        </li>
+        <li>
+          <a>Projekte</a>
+        </li>
+        <li>
+          <a>Kontakt</a>
+        </li>
+        <li>
+          <div class="translate2">DE EN</div>
+        </li>
+      </ul>
+    </nav>    
+      <img (click)="scrollTo('why-section')"
+      class="burger"
+      src="./../../../../assets/img/icons/burger.svg"
+      alt="burger"
+    />
   </div>
 </header>

@@ -4,13 +4,44 @@ https://www.figma.com/design/eqUOC0Fh2PuKwG4x0kUFHh/Portfolio?node-id=135-184&p=
 
 https://www.figma.com/design/qaO6bsto1TSRNDBMIxNdZN/Portfolio?node-id=5001-4597&p=f&t=RzEQYq0qYvc4LdqC-0
 
+bisherige Wahl (Version 2; Claudia Fohrer): https://www.figma.com/design/qaO6bsto1TSRNDBMIxNdZN/Portfolio?node-id=2183-3681&t=bIIEuKwdR2E35tRR-0
 
 Header -> im Desktop Version ist es fixed, aber in der Mobile Version nicht (Version 2; Claudia Fohrer)
 Header -> in der Desktop Version werden die Nav Elemente beim Klicken markiert, aber wenn man nach unten scrollt, ändern sie sich nicht (Version 2; Claudia Fohrer)
-Impressum -> imprint bzw. Impressum nicht gefunden (Version 2; Claudia Fohrer)
+Impressum -> imprint bzw. Impressum fehlt (Version 2; Claudia Fohrer)
 
-bisherige Wahl (Version 2; Claudia Fohrer): https://www.figma.com/design/qaO6bsto1TSRNDBMIxNdZN/Portfolio?node-id=2183-3681&t=bIIEuKwdR2E35tRR-0
 
-eigenes Logo
 
-pointer-event none
+21.1.25
+
+    *   
+    *   Interagration Burger Menü(BM)
+    *   wenn BM gedrückt, dann erscheint Div
+    *   BM Div designen
+    *   Header in die BM Div packen
+    *   Translation anschauen
+    *   Translation integrieren
+
+
+
+Umpositionierung und Designänderung des Headers: Burgermenü wird angezeigt, wenn 1000px breite erreicht und Logo wurde farblich angepasst; zweite navbar hinzugefügt
+
+
+
+
+
+
+
+
+
+
+
+
+BUGS:
+* Comp. profile-card 
+    -- Button wie der mit dem Pfeil oder die Icons reagieren bei zu starker Hover Nutzung nicht korrekt 
+        -> Lösungsansatz: Bilder über SCSS separat ansprechen; den Button selbst erstellen.
+
+* 
+
+

@@ -1,10 +1,11 @@
 @import "./../../../styles.scss";
 
 .landing-section {
-  height: 100vh;
+  height: calc(100vh - 104px - 100px);
   width: 85vw;
   max-width: 1440px;
-  max-height: 700px;
+  max-height: 1200px;
+
   margin-top: 50px;
   margin-bottom: 50px;
 
@@ -162,26 +163,25 @@ h2 {
 }
 
 @media (max-width: 1000px) {
-
-  .profile-photo{
+  .profile-photo {
     width: 100%;
   }
 
-  .title-section{
-    height: 50%;
+  .title-section {
+    height: 35%;
     align-items: center;
     justify-content: center;
     gap: 0;
-
   }
 
-  .background{
-    width: 225px;
+  .background {
+    width: 300px;
   }
 
   .landing-section {
     flex-direction: column;
     max-height: 570px;
+    margin-top: 75px;
   }
 
   .icon-section,
@@ -189,9 +189,17 @@ h2 {
     display: none;
   }
 
-  .overshoot-section{
+  .overshoot-section {
     margin-bottom: 32px;
   }
+}
 
+@media (max-width: 450px) {
+  .background{
+    width: 250px;
+  }
 
+  .title-section {
+    height: 50%;
+  }
 }

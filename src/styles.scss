@@ -16,20 +16,22 @@ body {
   background-color: $bg-color;
 }
 
+.d_none {
+  display: none;
+}
 
 section {
   max-width: 1440px;
 }
 
-
 // section {
-//   border: 2px lightgreen solid;
+//   border: 2px lightblue solid;
+// }
 
-//   div {
-//     border: 2px crimson solid;
-//   }
+// div {
+//   border: 2px crimson solid;
+// }
 
-//   img {
-//     border: 2px lightsalmon solid;
-//   }
+// img {
+//   border: 2px lightsalmon solid;
 // }
