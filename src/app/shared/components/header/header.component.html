@@ -35,28 +35,32 @@
         </li>
       </ul>
     </nav>
-    <div class="translate">DE EN</div>   
+    <div class="translate">DE EN</div>
 
-    <nav class="nav-mobile">
+    <nav class="nav-mobile" [ngClass]="{ open: menuOpen }">
       <ul>
-        <li (click)="scrollTo('why-section')">
+        <li
+          [class.active]="selectedItem === 0"
+          (click)="selectItem(0); scrollTo('why-section')"
+        >
           <a>Warum ich</a>
         </li>
-        <li>
+        <li [class.active]="selectedItem === 1" (click)="selectItem(1)">
           <a>Skills</a>
         </li>
-        <li>
+        <li [class.active]="selectedItem === 2" (click)="selectItem(2)">
           <a>Projekte</a>
         </li>
-        <li>
+        <li [class.active]="selectedItem === 3" (click)="selectItem(3)">
           <a>Kontakt</a>
         </li>
-        <li>
+        <li [class.active]="selectedItem === 4" (click)="selectItem(4)">
           <div class="translate2">DE EN</div>
         </li>
       </ul>
-    </nav>    
-      <img (click)="scrollTo('why-section')"
+    </nav>
+    <img
+      (click)="toggleMenu()"
       class="burger"
       src="./../../../../assets/img/icons/burger.svg"
       alt="burger"

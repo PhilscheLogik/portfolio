@@ -26,7 +26,7 @@ Impressum -> imprint bzw. Impressum fehlt (Version 2; Claudia Fohrer)
 
 Umpositionierung und Designänderung des Headers: Burgermenü wird angezeigt, wenn 1000px breite erreicht und Logo wurde farblich angepasst; zweite navbar hinzugefügt
 
-
+Begonnen why-me Section zu designen; Bug mit dem Burgermenü bei 320px behoben
 
 
 

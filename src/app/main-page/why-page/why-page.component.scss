@@ -1,7 +1,49 @@
 @import "./../../../styles.scss";
 
-section{
-    margin-top: 50px;
-    width: 85vw;
+section {
+  margin-top: 100px;
+  width: 85vw;
+  font-family: jose;
 }
 
+h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: anta;
+  color: $nav-color;
+  margin-bottom: 50px;
+}
+
+.location-icon {
+  width: 4.65rem;
+  height: 4rem;
+
+  background-image: url("./../../../assets/img/icons/icon_location.svg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.content {
+  @include displayFlex();
+}
+
+.left {
+  @include displayFlex();
+  font-size: 30px;
+  width: 50%;
+
+  span {
+    color: $nav-color;
+  }
+}
+
+.right {
+  @include displayFlex($fd:column);
+  font-size: 18px;
+  width: 50%;
+
+  >div{
+    @include displayFlex($fd:column);
+  }
+
+}
