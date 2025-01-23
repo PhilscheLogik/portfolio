@@ -1,13 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
+import {TranslatePipe, TranslateDirective, TranslateService} from "@ngx-translate/core";
+
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe, TranslateDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
+
+// https://ngx-translate.org/getting-started/translating-your-components/
 export class HeaderComponent {
 
   selectedItem: number | null = null;
@@ -33,6 +37,14 @@ export class HeaderComponent {
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
+
+  constructor(private translate: TranslateService) {}
+
+  changeLang(lang: string){
+    this.translate.use(lang);
+  }
+
+
 
 
 }

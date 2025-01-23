@@ -22,20 +22,23 @@
           [class.active]="selectedItem === 0"
           (click)="selectItem(0); scrollTo('why-section')"
         >
-          <a>Warum ich</a>
+          <a>{{ "header.nav1" | translate }}</a>
         </li>
         <li [class.active]="selectedItem === 1" (click)="selectItem(1)">
-          <a>Skills</a>
+          <a>{{ "header.nav2" | translate }}</a>
         </li>
         <li [class.active]="selectedItem === 2" (click)="selectItem(2)">
-          <a>Projekte</a>
+          <a>{{ "header.nav3" | translate }}</a>
         </li>
         <li [class.active]="selectedItem === 3" (click)="selectItem(3)">
-          <a>Kontakt</a>
+          <a>{{ "header.nav4" | translate }}</a>
         </li>
       </ul>
     </nav>
-    <div class="translate">DE EN</div>
+    <div class="translate">
+      <div (click)="changeLang('de')">DE</div>
+      <div (click)="changeLang('en')">EN</div>
+    </div>
 
     <nav class="nav-mobile" [ngClass]="{ open: menuOpen }">
       <ul>
@@ -43,22 +46,28 @@
           [class.active]="selectedItem === 0"
           (click)="selectItem(0); scrollTo('why-section')"
         >
-          <a>Warum ich</a>
+          <a>{{ "header.nav1" | translate }}</a>
         </li>
         <li [class.active]="selectedItem === 1" (click)="selectItem(1)">
-          <a>Skills</a>
+          <a>{{ "header.nav2" | translate }}</a>
         </li>
         <li [class.active]="selectedItem === 2" (click)="selectItem(2)">
-          <a>Projekte</a>
+          <a>{{ "header.nav3" | translate }}</a>
         </li>
         <li [class.active]="selectedItem === 3" (click)="selectItem(3)">
-          <a>Kontakt</a>
+          <a>{{ "header.nav4" | translate }}</a>
         </li>
-        <li [class.active]="selectedItem === 4" (click)="selectItem(4)">
-          <div class="translate2">DE EN</div>
+        <li>
+          <div (click)="changeLang('de')">DE</div>
+          <div (click)="changeLang('en')">EN</div>
         </li>
       </ul>
     </nav>
-    <div class="burger" (click)="toggleMenu()" [class.toggleOpen]="!menuOpen" [class.toggleClose]="menuOpen"></div>
+    <div
+      class="burger"
+      (click)="toggleMenu()"
+      [class.toggleOpen]="!menuOpen"
+      [class.toggleClose]="menuOpen"
+    ></div>
   </div>
 </header>

@@ -1,0 +1,16 @@
+{
+  "header": {
+    "nav1": "Warum ich",
+    "nav2": "Kenntnisse",
+    "nav3": "Projekte",
+    "nav4": "Kontakt"
+  },
+   
+  "why": {
+    "head": "Warum ich",
+    "leftPartOne": "Ich ",
+    "leftPartTwo": "wohne in Leipzig.. |",
+    "rightText": "Warum ich? Ich habe lange überlegt, aber noch keine Antwort darauf gefunden. Wenn jemanden etwas einfällt, schreibt mir gerne eine Nachricht - ich freue mich :)",
+    "button": "Lass uns reden"
+  }
+}

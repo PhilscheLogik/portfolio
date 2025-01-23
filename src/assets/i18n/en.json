@@ -1,0 +1,16 @@
+{
+  "header": {
+    "nav1": "Why me",
+    "nav2": "Skills",
+    "nav3": "Projects",
+    "nav4": "Contact"
+  },
+
+  "why": {
+    "head": "Why me",
+    "leftPartOne": "I am",
+    "leftPartTwo": "located in Leipzig.. |",
+    "rightText": "I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make me a valuable member for your team.",
+    "button": "Let´s talk"    
+  }
+}
