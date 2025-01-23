@@ -8,7 +8,55 @@
 
 .burger {
   height: 32px;
+  width: 30px;
   cursor: pointer;
+  background-image: url("./../../../../assets/img/icons/burger.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.toggleOpen {
+  animation: burgerOpen 0.3s ease 0s 1 normal forwards;
+}
+
+.toggleClose {
+  animation: burgerClose 0.3s ease 0s 1 normal forwards;
+}
+
+@keyframes burgerOpen {
+  0% {
+    background-image: url("./../../../../assets/img/icons/burger.svg");
+  }
+
+  33% {
+    background-image: url("./../../../../assets/img/icons/burger1.svg");
+  }
+
+  67% {
+    background-image: url("./../../../../assets/img/icons/burger2.svg");
+  }
+
+  100% {
+    background-image: url("./../../../../assets/img/icons/close.svg");
+  }
+}
+
+@keyframes burgerClose {
+  0% {
+    background-image: url("./../../../../assets/img/icons/close.svg");
+  }
+
+  33% {
+    background-image: url("./../../../../assets/img/icons/burger2.svg");
+  }
+
+  67% {
+    background-image: url("./../../../../assets/img/icons/burger1.svg");
+  }
+
+  100% {
+    background-image: url("./../../../../assets/img/icons/burger.svg");
+  }
 }
 
 header {
@@ -120,6 +168,7 @@ header {
   @include displayFlex($fd: column, $g: 0);
   width: 58px;
   height: 72px;
+  cursor: pointer;
 
   p {
     font-family: anta;

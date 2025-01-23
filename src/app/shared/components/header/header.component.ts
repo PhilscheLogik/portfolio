@@ -24,6 +24,12 @@ export class HeaderComponent {
     }
   }
 
+  scrollToTop(): void {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });}
+
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }

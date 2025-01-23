@@ -17,19 +17,17 @@ NICHT VERGESSEN:
     - 
 
 
-
-
-
 23.1.25
 
-    *   Arrow down erstellen (einfach bei Lass reden Button kopieren)
-    *   Arrow down verlinken (einfach bei Warum ich orientieren)
-    *   Scroll nach oben beim Logo des Headers
+    x   Arrow down erstellen (einfach bei Lass reden Button kopieren)
+    x   Arrow down verlinken (einfach bei Warum ich orientieren)
+    x   Animation Menü
+    x   Scroll nach oben beim Logo des Headers
 
     *   Translation anschauen
     *   Translation integrieren
 
-    * Footer design anpassen
+    *   Footer design anpassen
 
       
 

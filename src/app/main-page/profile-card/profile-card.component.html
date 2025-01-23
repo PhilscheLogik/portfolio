@@ -56,29 +56,10 @@
     <div class="overshoot-section">
       <h1>Philipp Franke</h1>
       <h2>FRONTEND DEVELOPER</h2>
-    </div>
+    </div>    
 
-    <div
-      class="button"
-      (mouseover)="showButton = true"
-      (mouseout)="showButton = false"
-    >
-      <img
-        class="background hover"
-        [class.visible]="showButton"
-        src="./assets/img/buttons/button_body_hover.png"
-        alt="button"
-      />
+    <div class="button" (click)="scrollTo('why-section')"><img src="./assets/img/buttons/arrow_up.png" alt="button" /></div>      
 
-      <img
-        class="background init"
-        [class.visible]="!showButton"
-        src="./assets/img/buttons/button_body.png"
-        alt="button"
-      />
-
-      <img src="./assets/img/buttons/arrow_up.png" alt="button" />
-    </div>
   </section>
 
   <section class="icon-section">

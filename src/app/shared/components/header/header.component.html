@@ -1,6 +1,6 @@
 <header>
   <div class="header-section">
-    <div class="logo-picture">
+    <div class="logo-picture" (click)="scrollToTop()">
       <img
         class="background init dark"
         src="./assets/img/logo/logo_icon_dark.png"
@@ -59,11 +59,6 @@
         </li>
       </ul>
     </nav>
-    <img
-      (click)="toggleMenu()"
-      class="burger"
-      src="./../../../../assets/img/icons/burger.svg"
-      alt="burger"
-    />
+    <div class="burger" (click)="toggleMenu()" [class.toggleOpen]="!menuOpen" [class.toggleClose]="menuOpen"></div>
   </div>
 </header>
