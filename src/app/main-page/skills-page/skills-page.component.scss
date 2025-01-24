@@ -1,0 +1,197 @@
+@import "./../../../styles.scss";
+
+section {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 60vw;
+  font-family: jose;
+}
+
+h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: anta;
+  color: $nav-color;
+  margin-bottom: 90px;
+}
+
+.content {
+  @include displayFlex($ai: stretch);
+}
+
+.left {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  width: 50%;
+  flex: 1;
+}
+
+.frame {
+  height: 100px;
+  @include displayFlex($fd: column);
+  margin-bottom: 10px;
+
+  img {
+    max-width: 90px;
+    height: 100%;
+  }
+
+  span {
+    font-size: 18px;
+    color: $nav-color;
+  }
+}
+
+.right {
+  @include displayFlex($fd: column);
+  flex: 1;
+  padding: 20px;
+  font-size: 18px;
+  width: 50%;
+  text-align: center;
+
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: opacity 0.5s steps(6, end);
+    z-index: 0;
+  }
+
+  &::before {
+    background-image: url("./../../../assets/img/background_mark/ellipse_skills.svg");
+    opacity: 1;
+  }
+
+  &::after {
+    background-image: url("./../../../assets/img/background_mark/ellipse_skills_hover.svg");
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  span {
+    width: 80%;
+  }
+
+  > div img {
+    width: 40px;
+    height: 54px;
+    margin: 4px 8px;
+  }
+}
+
+.right-mobile {
+  display: none;
+  h4 {
+    font-size: 16px;
+    color: $nav-color;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  > div {
+    @include displayFlex();
+
+    h4 {
+      color: $text-color;
+      text-align: center;
+
+    }
+    > div {
+      background-image: url("./../../../assets/img/background_mark/ellipse_skill_mobil.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      @include displayFlex();
+      padding: 18.5px;
+      
+
+
+      > img{
+        width: 40px;
+        height: 54px;        
+      }
+
+
+    }
+  }
+}
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+
+@media (max-width: 1305px) {
+  h2 {
+    font-size: 46px;
+  }
+
+  .left {
+    font-size: 24px;
+  }
+  .right {
+    font-size: 17px;
+  }
+
+  section {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .left {
+    font-size: 18px;
+    width: 100%;
+  }
+  .right {
+    font-size: 16px;
+    padding: 0;
+    width: 100%;
+  }
+
+  section {
+    width: 85vw;
+    margin-top: 25px;
+  }
+
+  .content {
+    @include displayFlex($fd: column);
+  }
+
+  .right-mobile {
+    display: inline-block;
+  }
+
+  .left, .right{
+    display: none;
+  }
+
+}

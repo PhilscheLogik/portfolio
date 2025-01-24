@@ -24,10 +24,23 @@ NICHT VERGESSEN:
     x   Animation Menü
     x   Scroll nach oben beim Logo des Headers
 
-    *   Translation anschauen
-    *   Translation integrieren
+    x   Translation anschauen
+    x   Translation integrieren
 
+    x   https://all-inkl.com/whois/domaincheck/ bestellen 
+
+
+24.1.25
+    x   Header Button für die Sprache designen
+    *   why me: nach dem Icon irgendein Effekt darauf
     *   Footer design anpassen
+    *   Domain einrichten (Martin Meeting)
+    x   My Skills: 2 Bereiche (ähnlich wie why me section)
+    x   Icons hinzufügen und designen
+    x   Ei hinzufügen und designen
+    x   Texte hinzufügen
+    x   responsive gestalten
+
 
       
 

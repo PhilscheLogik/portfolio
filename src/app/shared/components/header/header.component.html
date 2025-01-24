@@ -20,11 +20,11 @@
       <ul>
         <li
           [class.active]="selectedItem === 0"
-          (click)="selectItem(0); scrollTo('why-section')"
+          (click)="selectItem(0); scrollTo('why-section')" 
         >
           <a>{{ "header.nav1" | translate }}</a>
         </li>
-        <li [class.active]="selectedItem === 1" (click)="selectItem(1)">
+        <li [class.active]="selectedItem === 1" (click)="selectItem(1); scrollTo('skils-section')">
           <a>{{ "header.nav2" | translate }}</a>
         </li>
         <li [class.active]="selectedItem === 2" (click)="selectItem(2)">
@@ -36,8 +36,18 @@
       </ul>
     </nav>
     <div class="translate">
-      <div (click)="changeLang('de')">DE</div>
-      <div (click)="changeLang('en')">EN</div>
+      <div
+        [class.active]="currentItem === 1"
+        (click)="currentIndex(1); changeLang('de')"
+      >
+        DE
+      </div>
+      <div
+        [class.active]="currentItem === 2"
+        (click)="currentIndex(2); changeLang('en')"
+      >
+        EN
+      </div>
     </div>
 
     <nav class="nav-mobile" [ngClass]="{ open: menuOpen }">
@@ -48,7 +58,7 @@
         >
           <a>{{ "header.nav1" | translate }}</a>
         </li>
-        <li [class.active]="selectedItem === 1" (click)="selectItem(1)">
+        <li [class.active]="selectedItem === 1" (click)="selectItem(1); scrollTo('skils-section')">
           <a>{{ "header.nav2" | translate }}</a>
         </li>
         <li [class.active]="selectedItem === 2" (click)="selectItem(2)">
@@ -57,9 +67,19 @@
         <li [class.active]="selectedItem === 3" (click)="selectItem(3)">
           <a>{{ "header.nav4" | translate }}</a>
         </li>
-        <li>
-          <div (click)="changeLang('de')">DE</div>
-          <div (click)="changeLang('en')">EN</div>
+        <li class="translate2">
+          <div
+            [class.active]="currentItem === 1"
+            (click)="currentIndex(1); changeLang('de')"
+          >
+            DE
+          </div>
+          <div
+            [class.active]="currentItem === 2"
+            (click)="currentIndex(2); changeLang('en')"
+          >
+            EN
+          </div>
         </li>
       </ul>
     </nav>

@@ -16,9 +16,14 @@ export class HeaderComponent {
 
   selectedItem: number | null = null;
   menuOpen: boolean = true;
+  currentItem: number | null = null;
 
   selectItem(index: number): void {
     this.selectedItem = index;
+  }
+
+  currentIndex(index: number): void {
+    this.currentItem = index;
   }
 
   scrollTo(id: string) {

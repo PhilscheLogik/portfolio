@@ -9,8 +9,16 @@
   "why": {
     "head": "Why me",
     "leftPartOne": "I am",
-    "leftPartTwo": "located in Leipzig.. |",
+    "leftPartTwo": "located in Leipzig ..|",
     "rightText": "I am motivated to continuously learn new technologies and develop myself. My ability to solve complex problems and my passion for programming make me a valuable member for your team.",
-    "button": "Let´s talk"    
+    "button": "Let´s talk"
+  },
+
+  "skills": {
+    "head": "My Skills",
+    "textPartOne": "I am currently learning",
+    "textPartTwo": "Staying motivated to expand my IT skills requires a strategic approach, a curious mindset, and a commitment to lifelong learning.",
+    "textMobilHead": "What I am currently learning",
+    "textMobil": "I am currently learning VueJs and React and I am motivated to continuously learn new technologies and develop myself."
   }
 }

@@ -6,6 +6,42 @@
   display: none;
 }
 
+.translate,
+.translate2 {
+  cursor: pointer;
+  @include displayFlex();
+  
+
+  div {
+    color: $bg-color;
+    position: relative;
+
+    &:hover {
+      color: $text-color;
+    }
+
+    &.active {
+      color: $text-color;
+
+      
+      &::after {
+        content: "";
+        position: absolute;
+        top: 65%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        width: 2.5rem;
+        height: 2.5rem;
+        background-image: url("./../../../../assets/img/background_mark/ellipse.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;        
+
+      }
+    }
+  }
+}
+
 .burger {
   height: 32px;
   width: 30px;
@@ -195,7 +231,8 @@ header {
       align-items: flex-start;
       max-width: 85vw;
 
-      nav ul li {
+      nav ul li,
+      .translate2 {
         font-size: 22px;
       }
     }

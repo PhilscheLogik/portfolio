@@ -1,0 +1,39 @@
+<section>
+  <h2>{{ "skills.head" | translate }}</h2>
+  <div class="content">
+    <div class="left">
+      @for (item of items; track $index) {
+      <div class="frame">
+        <img [src]="item.image" [alt]="item.alt" />
+        <span>{{ item.title }}</span>
+      </div>
+      }
+    </div>
+
+    <div class="right">
+      <span>{{ "skills.textPartOne" | translate }}</span>
+      <div>
+        <img
+          src="./../../../assets/img/icons/react_icon.svg"
+          alt="react icon"
+        />
+        <img src="./../../../assets/img/icons/vue_icon.svg" alt="vue icon" />
+      </div>
+      <span>{{ "skills.textPartTwo" | translate }}</span>
+    </div>
+
+    <div class="right-mobile">
+      <h4>{{ "skills.textMobilHead" | translate }}</h4>
+      <div>
+        <p>{{ "skills.textMobil" | translate }}</p>
+        <div>
+          <img
+            src="./../../../assets/img/icons/react_icon.svg"
+            alt="react icon"
+          />
+          <img src="./../../../assets/img/icons/vue_icon.svg" alt="vue icon" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

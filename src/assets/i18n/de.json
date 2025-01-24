@@ -8,9 +8,18 @@
    
   "why": {
     "head": "Warum ich",
-    "leftPartOne": "Ich ",
-    "leftPartTwo": "wohne in Leipzig.. |",
+    "leftPartOne": "Ich bin ",
+    "leftPartTwo": "in Leipzig ..|",
     "rightText": "Warum ich? Ich habe lange überlegt, aber noch keine Antwort darauf gefunden. Wenn jemanden etwas einfällt, schreibt mir gerne eine Nachricht - ich freue mich :)",
     "button": "Lass uns reden"
+  },
+
+  "skills": {
+    "head": "Meine Kenntnisse",  
+    "textPartOne": "Mein Ziel zu lernen ist:" ,
+    "textPartTwo": "Um motiviert zu bleiben, meine IT-Kenntnisse zu erweitern, bleibe ich neugierig.",
+    "textMobilHead": "Mit was ich mich derzeit befasse",
+    "textMobil":"Mein weiteres Ziel zu lernen ist VueJs and React und um motiviert zu bleiben, meine IT-Kenntnisse zu erweitern, bleibe ich neugierig." 
+
   }
 }
