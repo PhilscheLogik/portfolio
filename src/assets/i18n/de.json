@@ -5,7 +5,7 @@
     "nav3": "Projekte",
     "nav4": "Kontakt"
   },
-   
+
   "why": {
     "head": "Warum ich",
     "leftPartOne": "Ich bin ",
@@ -15,11 +15,27 @@
   },
 
   "skills": {
-    "head": "Meine Kenntnisse",  
-    "textPartOne": "Mein Ziel zu lernen ist:" ,
+    "head": "Meine Kenntnisse",
+    "textPartOne": "Mein Ziel zu lernen ist:",
     "textPartTwo": "Um motiviert zu bleiben, meine IT-Kenntnisse zu erweitern, bleibe ich neugierig.",
     "textMobilHead": "Mit was ich mich derzeit befasse",
-    "textMobil":"Mein weiteres Ziel zu lernen ist VueJs and React und um motiviert zu bleiben, meine IT-Kenntnisse zu erweitern, bleibe ich neugierig." 
+    "textMobil": "Mein weiteres Ziel zu lernen ist VueJs and React und um motiviert zu bleiben, meine IT-Kenntnisse zu erweitern, bleibe ich neugierig."
+  },
+  "ref": {
+    "head": "Wird ein Teamplayer gebraucht? Das sagen meine Kollegen über mich",
+    "project": "Projekt",
+    "link": "Verknüpftes Profil",
 
+    "userName1": "Max Mustermann",
+    "userProject1": "Join",
+    "userText1": "Phil ist total toll :D",
+
+    "userName2": "James Rugman",
+    "userProject2": "Kochwelt",
+    "userText2": "Phil weiß, wie man calc() benutzt.",
+
+    "userName3": "Alexander Möchtegern",
+    "userProject3": "Join",
+    "userText3": "Phil hat das Team mit seiner großartigen Organisation und klaren Kommunikation wirklich zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen."
   }
 }

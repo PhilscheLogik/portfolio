@@ -24,13 +24,13 @@
         >
           <a>{{ "header.nav1" | translate }}</a>
         </li>
-        <li [class.active]="selectedItem === 1" (click)="selectItem(1); scrollTo('skils-section')">
+        <li [class.active]="selectedItem === 1" (click)="selectItem(1); scrollTo('skills-section')">
           <a>{{ "header.nav2" | translate }}</a>
         </li>
-        <li [class.active]="selectedItem === 2" (click)="selectItem(2)">
+        <li [class.active]="selectedItem === 2" (click)="selectItem(2); scrollTo('project-section')">
           <a>{{ "header.nav3" | translate }}</a>
         </li>
-        <li [class.active]="selectedItem === 3" (click)="selectItem(3)">
+        <li [class.active]="selectedItem === 3" (click)="selectItem(3); scrollTo('contact-section')">
           <a>{{ "header.nav4" | translate }}</a>
         </li>
       </ul>
@@ -58,13 +58,13 @@
         >
           <a>{{ "header.nav1" | translate }}</a>
         </li>
-        <li [class.active]="selectedItem === 1" (click)="selectItem(1); scrollTo('skils-section')">
+        <li [class.active]="selectedItem === 1" (click)="selectItem(1); scrollTo('skills-section')">
           <a>{{ "header.nav2" | translate }}</a>
         </li>
-        <li [class.active]="selectedItem === 2" (click)="selectItem(2)">
+        <li [class.active]="selectedItem === 2" (click)="selectItem(2); scrollTo('project-section')">
           <a>{{ "header.nav3" | translate }}</a>
         </li>
-        <li [class.active]="selectedItem === 3" (click)="selectItem(3)">
+        <li [class.active]="selectedItem === 3" (click)="selectItem(3); scrollTo('contact-section')">
           <a>{{ "header.nav4" | translate }}</a>
         </li>
         <li class="translate2">

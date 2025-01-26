@@ -20,5 +20,22 @@
     "textPartTwo": "Staying motivated to expand my IT skills requires a strategic approach, a curious mindset, and a commitment to lifelong learning.",
     "textMobilHead": "What I am currently learning",
     "textMobil": "I am currently learning VueJs and React and I am motivated to continuously learn new technologies and develop myself."
+  },
+  "ref": {
+    "head": "Need a teamplayer? Here what my colleagues said about me",
+    "project": "Project",
+    "link": "Linked In Profile",
+
+    "userName1": "Max Mustermann",
+    "userProject1": "Join",
+    "userText1": "Phil is totally great :D",
+
+    "userName2": "James Rugman",
+    "userProject2": "Cooking World",
+    "userText2": "Phil knows how to use calc().",
+
+    "userName3": "Alexander Möchtegern",
+    "userProject3": "Join",
+    "userText3": "Phil really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment."
   }
 }

@@ -40,7 +40,33 @@ NICHT VERGESSEN:
     x   Ei hinzufügen und designen
     x   Texte hinzufügen
     x   responsive gestalten
+    *   Karriere Reihe Modul 11 anschauen
 
+26.1.25
+
+    
+    x   alle Sections erstellen (grob)
+    x   References Section Template erstellen
+    x   Translate hinzufügen 
+    x   responsiv gestalten
+
+
+27.1.25 
+    +   Soll im Ref die Projekte zu den Section Project verlinkt werden?
+    +   Unterschiedliche Schriftart bei Desktop/Mobile für Überschrift Need a teamplayer? 
+    +   Darf man overflow-y: auto;, wenn zu viel Text da ist?
+    +   Muss das Ziehen via Maus/Touch funktionieren oder reicht die scrollbar -x?
+
+    *   Domain einrichten (Martin Meeting)
+    *   why me: nach dem Icon Typewriter Effekt darauf    
+    *   Skill section responsive Lets talk Button hinzufügen (aus der why-me Section nehmen)
+    *   Skill section responsive Span für die left Section ausblenden (aus der why-me Section nehmen)  
+    
+
+
+28.1.25 
+    *   Header muss sticky gemacht werden ohne postion: sticky, weil funktioniert nicht
+    *   Footer design anpassen
 
       
 

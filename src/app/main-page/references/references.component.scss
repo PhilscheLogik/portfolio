@@ -1,0 +1,194 @@
+@import "./../../../styles.scss";
+
+section {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 85vw;
+  font-family: jose;
+}
+
+h3 {
+  font-size: 32px;
+  text-align: center;
+  color: $nav-color;
+  margin-bottom: 60px;
+}
+
+h4 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+a {
+  font-size: 16px;
+  color: $nav-color;
+  cursor: pointer;
+  z-index: 2;
+
+  &:hover {
+    color: $text-color;
+  }
+}
+
+span {
+  > span {
+    color: $nav-color;
+  }
+}
+
+.content {
+  @include displayFlex();
+  gap: 37px;
+  width: 100%;
+}
+
+.bubble {
+  @include displayFlex($fd: column);
+  flex: 1;
+  padding: 71.5px 40.5px;
+  font-size: 18px;
+
+  width: 378px;
+  height: 383px;
+
+  text-align: center;
+
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: opacity 0.5s steps(6, end);
+    z-index: 0;
+  }
+
+  &::before {
+    background-image: url("./../../../assets/img/background_mark/ellipse_skills.svg");
+    opacity: 1;
+  }
+
+  &::after {
+    background-image: url("./../../../assets/img/background_mark/ellipse_skills_hover.svg");
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  > span {
+    margin-bottom: 12px;
+  }
+
+  p {
+    width: 80%;
+    flex: 1;
+    max-height: 130px;
+    overflow-y: auto;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 1200px) {
+  h4 {
+    font-size: 24px;
+  }
+
+  .bubble {
+    padding: 51.5px 20.5px;
+
+    p {
+        width: 100%;
+      font-size: 16px;
+      max-height: 100px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  section {
+    overflow-x: auto;
+  }
+
+  .content {
+    overflow-x:hidden;
+
+    
+    text-align: left;
+    width: 1012px;
+    gap: 8px;
+
+    margin-right: 10px;
+  }
+
+  h3 {
+    font-size: 8px;
+  }
+
+  h4 {
+    text-align: left;
+    margin-bottom: 2px;
+  }
+
+  .bubble {
+    align-items: flex-start;
+    text-align: left;
+    padding: 40px 2px 45px 40px;
+    
+
+    width: 290px;
+    height: 271px;
+
+    background-image: url("./../../../assets/img/background_mark/ellipse_ref_mobil.svg");
+
+    p {
+      text-align: left;
+    }
+
+    &::before {
+      background-image: none;
+    }
+
+    &::after {
+      background-image: none;
+    }
+  }
+}
+
+
+@media (max-width: 400px) {  
+
+    section{
+        width: 100%;
+    }
+  
+    .content { 
+      gap: 4px;
+
+    } 
+
+    .bubble{
+        padding-right: 20px;
+    }
+  }
+  
