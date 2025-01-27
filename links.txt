@@ -14,7 +14,7 @@ Impressum -> imprint bzw. Impressum fehlt (Version 2; Claudia Fohrer)
 NICHT VERGESSEN:
     - bei der Why-me muss der Button zum Kontakt verbunden werden
     - bei der Kontakt muss der Button nach ganz oben leiten können
-    - 
+    - bei großer Height ist der Arrow down falsch platziert
 
 
 23.1.25
@@ -31,24 +31,23 @@ NICHT VERGESSEN:
 
 
 24.1.25
-    x   Header Button für die Sprache designen
-    *   why me: nach dem Icon irgendein Effekt darauf
-    *   Footer design anpassen
-    *   Domain einrichten (Martin Meeting)
+    x   Header Button für die Sprache designen  
     x   My Skills: 2 Bereiche (ähnlich wie why me section)
     x   Icons hinzufügen und designen
     x   Ei hinzufügen und designen
     x   Texte hinzufügen
     x   responsive gestalten
-    *   Karriere Reihe Modul 11 anschauen
+
+    x   Karriere Reihe Modul 11 anschauen
 
 26.1.25
 
-    
     x   alle Sections erstellen (grob)
     x   References Section Template erstellen
     x   Translate hinzufügen 
     x   responsiv gestalten
+
+    +4h
 
 
 27.1.25 
@@ -57,12 +56,14 @@ NICHT VERGESSEN:
     +   Darf man overflow-y: auto;, wenn zu viel Text da ist?
     +   Muss das Ziehen via Maus/Touch funktionieren oder reicht die scrollbar -x?
 
+    *   Kontakt Component HTML erstellen 
+    *   Kontakt Component gestalten
+    *   Kontakt Formular Videos schauen
     *   Domain einrichten (Martin Meeting)
     *   why me: nach dem Icon Typewriter Effekt darauf    
     *   Skill section responsive Lets talk Button hinzufügen (aus der why-me Section nehmen)
     *   Skill section responsive Span für die left Section ausblenden (aus der why-me Section nehmen)  
     
-
 
 28.1.25 
     *   Header muss sticky gemacht werden ohne postion: sticky, weil funktioniert nicht

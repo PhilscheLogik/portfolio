@@ -1,1 +1,30 @@
-<p>contact works!</p>
+<section>
+  <h2>{{ "contact.head" | translate }}</h2>
+  <div>
+    <p>
+      JavaScript: Die einzige Sprache, bei der man weinen und gleichzeitig
+      lachen kann. JavaScript: Die Sprache, die beweist, dass auch Chaos seine
+      eigene Schönheit haben kann.
+    </p>
+    <div>
+      <a href="#">IMG: MAIL</a>
+      <a href="#">IMG: HANDY</a>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Dein Name" />
+    </div>
+    <div class="form-group">
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" placeholder="Deine E-Mail" />
+    </div>
+    <div class="form-group full-width">
+      <label for="message">Nachricht</label>
+      <textarea id="message" placeholder="Deine Nachricht"></textarea>
+    </div>
+    <button type="submit">Senden</button>
+  </div>
+</section>

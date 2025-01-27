@@ -1,0 +1,96 @@
+@import "./../../../styles.scss";
+
+section {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 64vw;
+    font-family: jose;
+  }
+  
+  h2 {
+    font-size: 54px;
+    text-align: center;
+    font-family: anta;
+    color: $nav-color;
+    margin-bottom: 90px;
+  }
+
+  .contact-form {
+    display: grid;
+    gap: 16px;
+  
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+  
+      label {
+        font-size: 14px;
+        margin-bottom: 4px;
+        color: $nav-color;
+      }
+  
+      input,
+      textarea {
+        border: 1px solid $nav-color;
+        border-radius: 4px;
+        padding: 8px;
+        font-size: 16px;
+        outline: none;
+        background-color:$bg-color;
+        transition: background-color 0.2s, border-color 0.2s;
+  
+        &:focus {
+          background-color: rgba($nav-color, 0.12);
+        }
+  
+        &.error {
+          border-color: $hightlight;
+  
+          & + label {
+            color: $hightlight;
+          }
+        }
+      }
+  
+      textarea {
+        resize: none;
+      }
+  
+      &.full-width {
+        grid-column: 1 / -1; // Nachricht über die gesamte Breite
+      }
+    }
+  
+    // Zwei Spalten für Name und E-Mail
+    .form-group:nth-child(1),
+    .form-group:nth-child(2) {
+      width: calc(50% - 8px); // Platz für den Gap
+    }
+  
+    // Form gruppieren für Grid-Layout
+    .form-group:nth-child(1) {
+      grid-column: 1; // Links
+    }
+  
+    .form-group:nth-child(2) {
+      grid-column: 2; // Rechts
+    }
+  
+    button {
+      grid-column: 1 / -1;
+      padding: 10px 16px;
+      font-size: 16px;
+      background-color: none;
+      color: gray;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+  
+      &:hover {
+        background-color: $nav-color;
+      }
+    }
+  }
+  

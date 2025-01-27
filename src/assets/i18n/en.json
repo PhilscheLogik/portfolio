@@ -26,16 +26,19 @@
     "project": "Project",
     "link": "Linked In Profile",
 
-    "userName1": "Max Mustermann",
+    "userName1": "Sahra Mueller",
     "userProject1": "Join",
-    "userText1": "Phil is totally great :D",
+    "userText1": "Phil had to develop, format and deliver content in collaboration with the team members. He is a reliable and friendly person",
 
-    "userName2": "James Rugman",
+    "userName2": "Max Mustermann",
     "userProject2": "Cooking World",
     "userText2": "Phil knows how to use calc().",
 
-    "userName3": "Alexander Möchtegern",
+    "userName3": "Alexander Moechtegern",
     "userProject3": "Join",
     "userText3": "Phil really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment."
+  },
+  "contact": {
+    "head": "Contact me"
   }
 }

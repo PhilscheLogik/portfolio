@@ -37,5 +37,8 @@
     "userName3": "Alexander Möchtegern",
     "userProject3": "Join",
     "userText3": "Phil hat das Team mit seiner großartigen Organisation und klaren Kommunikation wirklich zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen."
+  },
+  "contact": {
+    "head": "Mein Kontakt"
   }
 }
