@@ -1,30 +1,49 @@
 <section>
   <h2>{{ "contact.head" | translate }}</h2>
-  <div>
+  <div class="description">
     <p>
-      JavaScript: Die einzige Sprache, bei der man weinen und gleichzeitig
-      lachen kann. JavaScript: Die Sprache, die beweist, dass auch Chaos seine
-      eigene Schönheit haben kann.
+      {{ "contact.text" | translate }}
     </p>
     <div>
-      <a href="#">IMG: MAIL</a>
-      <a href="#">IMG: HANDY</a>
+      <a href="mailto:Franke.Phil89@googlemail.com" target="_blank"
+        ><img src="./../../../assets/img/icons/icon _email_.svg" /> E-mail:
+        Franke.Phil89&#64;googlemail.com</a
+      >
+      <a href="tel:+499123456789" target="_blank"
+        ><img src="./../../../assets/img/icons/icon _phone_.svg" /> Tel: +49
+        9123456789</a
+      >
     </div>
   </div>
 
   <div class="contact-form">
     <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Dein Name" />
+      <label for="name">{{ "contact.name" | translate }}</label>
+      <input type="text" id="name" placeholder="" />
     </div>
     <div class="form-group">
-      <label for="email">E-Mail</label>
-      <input type="email" id="email" placeholder="Deine E-Mail" />
+      <label for="email">{{ "contact.mail" | translate }}</label>
+      <input type="email" id="email" placeholder="" />
     </div>
     <div class="form-group full-width">
-      <label for="message">Nachricht</label>
-      <textarea id="message" placeholder="Deine Nachricht"></textarea>
+      <label for="message">{{ "contact.msg" | translate }}</label>
+      <textarea id="message" placeholder=""></textarea>
     </div>
-    <button type="submit">Senden</button>
+    <div class="form-group full-width policy">
+      <label class="check">
+        <input type="checkbox" [(ngModel)]="isChecked" />
+        <span></span>
+      </label>
+      <p>
+        {{ "contact.policy1" | translate }}
+        <span>{{ "contact.policy2" | translate }}</span>
+        {{ "contact.policy3" | translate }}
+      </p>
+    </div>
+    <div class="form-group full-width">
+      <div class="button-div">
+        <button type="submit" [ngClass]="{ 'active': isChecked }">{{ "contact.send" | translate }}</button>
+      </div>
+    </div>
   </div>
 </section>

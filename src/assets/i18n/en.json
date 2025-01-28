@@ -22,7 +22,8 @@
     "textMobil": "I am currently learning VueJs and React and I am motivated to continuously learn new technologies and develop myself."
   },
   "ref": {
-    "head": "Need a teamplayer? Here what my colleagues said about me",
+    "head": "Need a teamplayer?",
+    "head2": "Here what my colleagues said about me",
     "project": "Project",
     "link": "Linked In Profile",
 
@@ -39,6 +40,14 @@
     "userText3": "Phil really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment."
   },
   "contact": {
-    "head": "Contact me"
+    "head": "Contact me",
+    "text": "Still not sure if I'm the right person? Questions, interested in a collaboration or feedback on the portfolio? Simply fill in the form - you will receive a response as soon as possible.",
+    "name": "Your name",
+    "mail": "Your Email",
+    "msg": "Your Message",
+    "policy1": "I've read the ",
+    "policy2": "privacy policy",
+    "policy3": " and agree to the processing of my data as outlined.",
+    "send": "Send"
   }
 }

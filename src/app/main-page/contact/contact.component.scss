@@ -1,96 +1,201 @@
 @import "./../../../styles.scss";
 
 section {
-    margin-top: 100px;
-    margin-bottom: 50px;
-    width: 64vw;
-    font-family: jose;
-  }
-  
-  h2 {
-    font-size: 54px;
-    text-align: center;
-    font-family: anta;
-    color: $nav-color;
-    margin-bottom: 90px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 64vw;
+  font-family: jose;
+}
+
+h2 {
+  font-size: 54px;
+  text-align: center;
+  font-family: anta;
+  color: $nav-color;
+  margin-bottom: 90px;
+}
+
+.description {
+  @include displayFlex($jc: space-between);
+  width: 100%;
+
+  margin-bottom: 48px;
+
+  > p {
+    width: 50%;
   }
 
-  .contact-form {
-    display: grid;
-    gap: 16px;
-  
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-  
-      label {
-        font-size: 14px;
-        margin-bottom: 4px;
-        color: $nav-color;
+  > div {
+    width: 50%;
+    @include displayFlex($ai: flex-start, $fd: column);
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    @include displayFlex();
+
+    &:hover {
+      color: $nav-color;
+    }
+
+    img {
+      width: 26px;
+      height: 30px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    label {
+      font-size: 14px;
+      margin-bottom: 4px;
+      margin-left: 30px;
+      color: $nav-color;
+    }
+
+    input,
+    button {
+      border-radius: 50px;
+    }
+
+    input,
+    textarea {
+      border: 1px solid $nav-color;
+      padding: 16px 20px;
+      font-size: 18px;
+      outline: none;
+      background-color: $bg-color;
+      transition: background-color 0.2s, border-color 0.2s;
+
+      &:focus {
+        background-color: rgba($nav-color, 0.12);
       }
+
+      &.error {
+        border-color: $hightlight;
+
+        & + label {
+          color: $hightlight;
+        }
+      }
+    }
+
+    textarea {
+      resize: none;
+      border-radius: 25px;
+      min-height: 150px;
+    }
+
+    &.full-width {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .form-group:nth-child(1) {
+    grid-column: 1;
+  }
+
+  .form-group:nth-child(2) {
+    grid-column: 2;
+  }
+
+  button {
+    padding: 12px 30px;
+    font-size: 18px;
+    border: 1px solid gray;
+    background-color: $bg-color;
+    color: gray;
+    cursor: not-allowed; // Button nicht klickbar
   
-      input,
-      textarea {
-        border: 1px solid $nav-color;
-        border-radius: 4px;
-        padding: 8px;
-        font-size: 16px;
-        outline: none;
-        background-color:$bg-color;
-        transition: background-color 0.2s, border-color 0.2s;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
   
-        &:focus {
+    &:hover {
+      color: gray;
+    }
+  
+    &.active {
+      border-color: $nav-color;
+      color: $nav-color;
+      cursor: pointer;
+
+      &:hover{
+        background-color: rgba($nav-color, 0.12);
+      }
+    }
+  
+    &:disabled {
+      background-color: lighten($bg-color, 10%);
+    }
+  }
+
+  .form-group {
+    label {
+      margin-left: 0;
+    }
+    .check {
+      span {
+        &:hover {
           background-color: rgba($nav-color, 0.12);
         }
-  
-        &.error {
-          border-color: $hightlight;
-  
-          & + label {
-            color: $hightlight;
-          }
-        }
-      }
-  
-      textarea {
-        resize: none;
-      }
-  
-      &.full-width {
-        grid-column: 1 / -1; // Nachricht über die gesamte Breite
-      }
-    }
-  
-    // Zwei Spalten für Name und E-Mail
-    .form-group:nth-child(1),
-    .form-group:nth-child(2) {
-      width: calc(50% - 8px); // Platz für den Gap
-    }
-  
-    // Form gruppieren für Grid-Layout
-    .form-group:nth-child(1) {
-      grid-column: 1; // Links
-    }
-  
-    .form-group:nth-child(2) {
-      grid-column: 2; // Rechts
-    }
-  
-    button {
-      grid-column: 1 / -1;
-      padding: 10px 16px;
-      font-size: 16px;
-      background-color: none;
-      color: gray;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.2s;
-  
-      &:hover {
-        background-color: $nav-color;
       }
     }
   }
-  
+
+  .check {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 0;
+
+    input {
+      position: absolute;
+      opacity: 0; // Unsichtbar machen
+      width: 0;
+      height: 0;
+
+      &:checked + span {
+        background-image: url("./../../../assets/img/icons/check_full.svg");
+      }
+    }
+
+    span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: url("./../../../assets/img/icons/check_empty.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 50%; // Runde Form
+      transition: background-image 0.3s ease, background-color 0.3s ease;
+    }
+  }
+
+  .policy {
+    @include displayFlex($jc: flex-start);
+    p {
+      font-size: 14px;
+
+      span {
+        color: $nav-color;
+      }
+    }
+  }
+
+  .button-div {
+    width: 100%;
+    @include displayFlex($jc: flex-end);
+  }
+}

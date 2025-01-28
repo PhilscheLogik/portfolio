@@ -11,6 +11,13 @@ Header -> in der Desktop Version werden die Nav Elemente beim Klicken markiert, 
 Impressum -> imprint bzw. Impressum fehlt (Version 2; Claudia Fohrer)
 
 
+FRAGEN:
+    +   Soll im Ref die Projekte zu den Section Project verlinkt werden? -> nö, ist aber cool
+    +   Unterschiedliche Schriftart bei Desktop/Mobile für Überschrift Need a teamplayer? -> passe es an
+    +   Darf man overflow-y: auto;, wenn zu viel Text da ist? -> jo
+    +   Muss das Ziehen via Maus/Touch funktionieren oder reicht die scrollbar -x? -> einfach den Balken designen
+
+
 NICHT VERGESSEN:
     - bei der Why-me muss der Button zum Kontakt verbunden werden
     - bei der Kontakt muss der Button nach ganz oben leiten können
@@ -18,7 +25,6 @@ NICHT VERGESSEN:
 
 
 23.1.25
-
     x   Arrow down erstellen (einfach bei Lass reden Button kopieren)
     x   Arrow down verlinken (einfach bei Warum ich orientieren)
     x   Animation Menü
@@ -40,36 +46,34 @@ NICHT VERGESSEN:
 
     x   Karriere Reihe Modul 11 anschauen
 
-26.1.25
 
+26.1.25
     x   alle Sections erstellen (grob)
     x   References Section Template erstellen
     x   Translate hinzufügen 
     x   responsiv gestalten
-
     +4h
 
 
-27.1.25 
-    +   Soll im Ref die Projekte zu den Section Project verlinkt werden?
-    +   Unterschiedliche Schriftart bei Desktop/Mobile für Überschrift Need a teamplayer? 
-    +   Darf man overflow-y: auto;, wenn zu viel Text da ist?
-    +   Muss das Ziehen via Maus/Touch funktionieren oder reicht die scrollbar -x?
-
-    *   Kontakt Component HTML erstellen 
-    *   Kontakt Component gestalten
-    *   Kontakt Formular Videos schauen
-    *   Domain einrichten (Martin Meeting)
-    *   why me: nach dem Icon Typewriter Effekt darauf    
-    *   Skill section responsive Lets talk Button hinzufügen (aus der why-me Section nehmen)
-    *   Skill section responsive Span für die left Section ausblenden (aus der why-me Section nehmen)  
-    
+27.1.25     
+    x   Kontakt Component HTML erstellen 
+    x   Kontakt Component gestalten Desktop (grob)    
+    x   Domain einrichten (Martin Meeting)
+        
 
 28.1.25 
+    x   Kontakt Component gestalten Desktop (fein)
+    
+    *   Kontakt Component gestalten Mobile (grob)
+    *   Kontakt Component gestalten Mobile (fein)
+    *   Kontakt Formular Videos schauen
+    *   why me: nach dem Icon Typewriter Effekt darauf  
+    *   Scrollbar bei ref. designen
+    *   Überschrift bei Ref. soll sich mitziehen  
+    *   Skill section responsive Lets talk Button hinzufügen (aus der why-me Section nehmen)
+    *   Skill section responsive Span für die left Section ausblenden (aus der why-me Section nehmen)  
     *   Header muss sticky gemacht werden ohne postion: sticky, weil funktioniert nicht
-    *   Footer design anpassen
-
-      
+    *   Footer design anpassen  
 
 
 

@@ -22,7 +22,8 @@
     "textMobil": "Mein weiteres Ziel zu lernen ist VueJs and React und um motiviert zu bleiben, meine IT-Kenntnisse zu erweitern, bleibe ich neugierig."
   },
   "ref": {
-    "head": "Wird ein Teamplayer gebraucht? Das sagen meine Kollegen über mich",
+    "head": "Wird ein Teamplayer gebraucht?",
+    "head2": "Das sagen meine Kollegen über mich",
     "project": "Projekt",
     "link": "Verknüpftes Profil",
 
@@ -39,6 +40,14 @@
     "userText3": "Phil hat das Team mit seiner großartigen Organisation und klaren Kommunikation wirklich zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen."
   },
   "contact": {
-    "head": "Mein Kontakt"
+    "head": "Mein Kontakt",
+    "text": "Noch nicht sicher, ob ich die richtige Person bin? Fragen, Interesse an einer Zusammenarbeit oder Feedback zum Portfolio? Einfach das Formular ausfüllen – eine Rückmeldung erfolgt so schnell wie möglich.",
+    "name": "Ihr/Dein Name",
+    "mail": "Ihre/Deine Email",
+    "msg": "Ihre/Deine Nachricht",
+    "policy1": "Ich habe die",
+    "policy2": "Datenschutzbestimmungen",
+    "policy3": "gelesen und stimme der Verarbeitung der eigenen Daten wie beschrieben zu.",
+    "send": "Senden"
   }
 }
