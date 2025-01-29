@@ -5,6 +5,7 @@ section {
   margin-bottom: 50px;
   width: 85vw;
   font-family: jose;
+  overflow-x: auto;
 
   > h4 {
     margin-bottom: 30px;
@@ -12,7 +13,7 @@ section {
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 60px;
   text-align: center;
   color: $nav-color;
   margin-bottom: 60px;
@@ -46,6 +47,10 @@ span {
   @include displayFlex();
   gap: 37px;
   width: 100%;
+
+  div {
+    min-width: 300px;
+  }
 }
 
 .bubble {
@@ -114,6 +119,14 @@ span {
   }
 }
 
+/*-------------------------------------------------------*/
+
+@media (max-width: 1305px) {
+  h3 {
+    font-size: 46px;
+  }
+}
+
 @media (max-width: 1200px) {
   h4 {
     font-size: 24px;
@@ -131,9 +144,9 @@ span {
 }
 
 @media (max-width: 1000px) {
-  section {    
-
+  section {
     > h3 {
+      font-size: 32px;
       margin-bottom: 10px;
     }
 

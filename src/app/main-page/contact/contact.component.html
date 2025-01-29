@@ -16,22 +16,22 @@
     </div>
   </div>
 
-  <div class="contact-form">
-    <div class="form-group">
+  <form class="contact-form" (ngSubmit)="onSubmit()">
+    <div class="form-group" >
       <label for="name">{{ "contact.name" | translate }}</label>
-      <input type="text" id="name" placeholder="" />
+      <input [(ngModel)]="contactData.name" name="name" type="text" id="name" placeholder="" required/>
     </div>
     <div class="form-group">
       <label for="email">{{ "contact.mail" | translate }}</label>
-      <input type="email" id="email" placeholder="" />
+      <input [(ngModel)]="contactData.mail" name="email" type="email" id="email" placeholder="" required/>
     </div>
     <div class="form-group full-width">
       <label for="message">{{ "contact.msg" | translate }}</label>
-      <textarea id="message" placeholder=""></textarea>
+      <textarea [(ngModel)]="contactData.msg" name="message" id="message" placeholder="" required></textarea>
     </div>
     <div class="form-group full-width policy">
       <label class="check">
-        <input type="checkbox" [(ngModel)]="isChecked" />
+        <input type="checkbox" name="isChecked" [(ngModel)]="contactData.isChecked" />
         <span></span>
       </label>
       <p>
@@ -42,8 +42,8 @@
     </div>
     <div class="form-group full-width">
       <div class="button-div">
-        <button type="submit" [ngClass]="{ 'active': isChecked }">{{ "contact.send" | translate }}</button>
+        <button type="submit" [ngClass]="{ 'active': contactData.isChecked }">{{ "contact.send" | translate }}</button>
       </div>
     </div>
-  </div>
+  </form>
 </section>

@@ -117,23 +117,23 @@ h2 {
     background-color: $bg-color;
     color: gray;
     cursor: not-allowed; // Button nicht klickbar
-  
+
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
-  
+
     &:hover {
       color: gray;
     }
-  
+
     &.active {
       border-color: $nav-color;
       color: $nav-color;
       cursor: pointer;
 
-      &:hover{
+      &:hover {
         background-color: rgba($nav-color, 0.12);
       }
     }
-  
+
     &:disabled {
       background-color: lighten($bg-color, 10%);
     }
@@ -173,8 +173,8 @@ h2 {
 
     span {
       display: block;
-      width: 100%;
-      height: 100%;
+      width: 24px;
+      height: 24px;
       background-image: url("./../../../assets/img/icons/check_empty.svg");
       background-repeat: no-repeat;
       background-position: center center;
@@ -197,5 +197,63 @@ h2 {
   .button-div {
     width: 100%;
     @include displayFlex($jc: flex-end);
+  }
+}
+
+/*-------------------------------------------------------*/
+
+@media (max-width: 1305px) {
+  h2 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 1000px) {
+  section {
+    width: 85vw;
+
+    .contact-form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+
+      .form-group {
+        grid-column: span 1; // Alle Elemente über eine ganze Spalte strecken
+
+        .check {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  .description {
+    flex-direction: column-reverse;
+
+    div {
+      font-size: 18px;
+      margin: 10px 0;
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+      font-size: 16px;
+      margin: 10px 0;
+    }
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  section {
+    width: 100%;
+    padding: 0 8px;
   }
 }

@@ -63,10 +63,16 @@ NICHT VERGESSEN:
 
 28.1.25 
     x   Kontakt Component gestalten Desktop (fein)
+    x   Kontakt Formular Videos schauen begonnen    
+    x   Scrollbar bei ref. designen
+
+
+29.1.25 
     
-    *   Kontakt Component gestalten Mobile (grob)
+    x   Kontakt Component gestalten Mobile (grob)
+
     *   Kontakt Component gestalten Mobile (fein)
-    *   Kontakt Formular Videos schauen
+    *   Kontakt Formular Videos zu ende 
     *   why me: nach dem Icon Typewriter Effekt darauf  
     *   Scrollbar bei ref. designen
     *   Überschrift bei Ref. soll sich mitziehen  
