@@ -5,10 +5,39 @@ section {
   margin-bottom: 50px;
   width: 64vw;
   font-family: jose;
+  position: relative;
 }
 
+.button {
+  width: 38px;
+  height: 89px;
+  padding: 19.5px 8px;
+  border-radius: 100px;
+  border: 1px solid $nav-color;
+  color: $nav-color;
+  cursor: pointer;
+
+  position: absolute;
+  top:0;
+  right: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: rotate(180deg);
+
+  }
+
+  &:hover {
+    background-color: rgba($nav-color, 0.12);
+  }
+}
+
+
+
 h2 {
-  font-size: 54px;
+  font-size: 60px;
   text-align: center;
   font-family: anta;
   color: $nav-color;
@@ -47,6 +76,38 @@ h2 {
   }
 }
 
+.mail-img,
+.tel-img {
+  display: inline-block;
+
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.mail-img {
+  background-image: url("./../../../assets/img/icons/icon _email_.svg");
+
+  &:hover{
+    background-image: url("./../../../assets/img/icons/icon_email_full.svg");
+  }
+
+}
+
+.tel-img {
+  background-image: url("./../../../assets/img/icons/icon_phone_.svg");
+
+  &:hover{
+    background-image: url("./../../../assets/img/icons/icon_phone_full.svg");
+  }
+}
+
+
+
+
+
 .contact-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -77,6 +138,10 @@ h2 {
       outline: none;
       background-color: $bg-color;
       transition: background-color 0.2s, border-color 0.2s;
+
+      &::placeholder {
+        color: transparent;
+      }
 
       &:focus {
         background-color: rgba($nav-color, 0.12);
@@ -141,7 +206,7 @@ h2 {
 
   .form-group {
     label {
-      margin-left: 0;
+      margin-left: 25px;
     }
     .check {
       span {
@@ -178,7 +243,7 @@ h2 {
       background-image: url("./../../../assets/img/icons/check_empty.svg");
       background-repeat: no-repeat;
       background-position: center center;
-      border-radius: 50%; // Runde Form
+      border-radius: 50%;
       transition: background-image 0.3s ease, background-color 0.3s ease;
     }
   }
@@ -220,11 +285,19 @@ h2 {
       .form-group {
         grid-column: span 1; // Alle Elemente über eine ganze Spalte strecken
 
-        .check {
-          display: inline-block;
-          width: 24px;
-          height: 24px;
+        input::placeholder,
+        textarea::placeholder {
+          color: rgba($text-color, 0.25);
         }
+
+        label {
+          color: transparent;
+        }
+      }
+      .check {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
       }
     }
   }

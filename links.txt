@@ -70,11 +70,16 @@ NICHT VERGESSEN:
 29.1.25 
     
     x   Kontakt Component gestalten Mobile (grob)
+    x   Kontakt Component gestalten Mobile (fein)
 
-    *   Kontakt Component gestalten Mobile (fein)
-    *   Kontakt Formular Videos zu ende 
+30.1.25
+
+    x   Kontakt Formular Videos zu ende 
+    *   error msg einfügen
+
+
     *   why me: nach dem Icon Typewriter Effekt darauf  
-    *   Scrollbar bei ref. designen
+    
     *   Überschrift bei Ref. soll sich mitziehen  
     *   Skill section responsive Lets talk Button hinzufügen (aus der why-me Section nehmen)
     *   Skill section responsive Span für die left Section ausblenden (aus der why-me Section nehmen)  
@@ -83,6 +88,9 @@ NICHT VERGESSEN:
 
 
 
+
+    *   Mail bei der php datei ändern
+    *   nochmal bei contact ts bei post das endPoint prüfen/informieren
 
 
 
