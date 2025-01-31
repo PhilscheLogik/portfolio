@@ -43,11 +43,15 @@
     "head": "Mein Kontakt",
     "text": "Noch nicht sicher, ob ich die richtige Person bin? Fragen, Interesse an einer Zusammenarbeit oder Feedback zum Portfolio? Einfach das Formular ausfüllen – eine Rückmeldung erfolgt so schnell wie möglich.",
     "name": "Ihr/Dein Name",
+    "nameError": "Ihr/Dein Name ist erforderlich",
     "mail": "Ihre/Deine Email",
+    "mailError": "Ihre/Deine Email ist erforderlich",
     "msg": "Ihre/Deine Nachricht",
+    "msgError": "Ihre/Deine Nachricht ist erforderlich",
     "policy1": "Ich habe die",
     "policy2": "Datenschutzbestimmungen",
     "policy3": "gelesen und stimme der Verarbeitung der eigenen Daten wie beschrieben zu.",
+    "policyError": "Wir bitten um eine Akzeptanz der Datenschutzbestimmungen",
     "send": "Senden"
   }
 }

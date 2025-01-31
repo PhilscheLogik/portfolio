@@ -1,6 +1,8 @@
 <section>
   <h2>{{ "contact.head" | translate }}</h2>
-  <div class="button" (click)="scrollToTop()"><img src="./assets/img/buttons/arrow_up.png" alt="button" /></div> 
+  <div class="button" (click)="scrollToTop()">
+    <img src="./assets/img/buttons/arrow_up.png" alt="button" />
+  </div>
   <div class="description">
     <p>
       {{ "contact.text" | translate }}
@@ -23,7 +25,14 @@
     #contactForm="ngForm"
   >
     <div class="form-group">
+      @if (!submitted || name.valid) {
       <label for="name">{{ "contact.name" | translate }}</label>
+      } @else {
+      <label for="name" class="error-message">{{
+        "contact.nameError" | translate
+      }}</label>
+      }
+
       <input
         [(ngModel)]="contactData.name"
         name="name"
@@ -31,10 +40,23 @@
         id="name"
         [attr.placeholder]="'contact.name' | translate"
         required
+        #name="ngModel"
+        [class.error]="submitted && !name.valid"
       />
+
+      @if (name.touched && name.valid) {
+      <span class="success-message">✔</span>
+      }
     </div>
     <div class="form-group">
+      @if (!submitted || email.valid) {
       <label for="email">{{ "contact.mail" | translate }}</label>
+      } @else {
+      <label for="email" class="error-message">{{
+        "contact.mailError" | translate
+      }}</label>
+      }
+
       <input
         [(ngModel)]="contactData.mail"
         name="email"
@@ -42,13 +64,24 @@
         id="email"
         [attr.placeholder]="'contact.mail' | translate"
         required
+        #email="ngModel"
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+        [class.error]="submitted && !email.valid"
       />
+      @if (email.touched && email.valid) {
+      <span class="success-message">✔</span>
+      }
       <!-- pattern="[a-zäüößA-ZÄÜÖß0-9._%+\-]+@[a-zäüößA-ZÄÜÖß0-9.\-]+\.[a-zA-Z]{2,}" -->
       <!-- pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" -->
     </div>
     <div class="form-group full-width">
+      @if (!submitted || message.valid) {
       <label for="message">{{ "contact.msg" | translate }}</label>
+      } @else {
+      <label for="message" class="error-message">
+        {{ "contact.msgError" | translate }}
+      </label>
+      }
       <textarea
         [(ngModel)]="contactData.msg"
         name="message"
@@ -57,34 +90,39 @@
         required
         #message="ngModel"
         minlength="4"
+        [class.error]="submitted && !message.valid"
       >
       </textarea>
-      @if(!message.valid && message.touched && !message.disabled){
-      <span>Geht nicht</span>
-      } @else{
-       <div>✔</div>
+      @if (message.touched && message.valid) {
+      <span class="success-message">✔</span>
       }
-
-
     </div>
     <div class="form-group full-width policy">
-      <label class="check">
+      <label class="check" [class.errorCheck]="submitted && !isChecked.valid">
         <input
           type="checkbox"
           name="isChecked"
           [(ngModel)]="contactData.isChecked"
+          required
+          #isChecked="ngModel"
         />
         <span></span>
       </label>
-      <p>
-        {{ "contact.policy1" | translate }}
-        <span>{{ "contact.policy2" | translate }}</span>
-        {{ "contact.policy3" | translate }}
-      </p>
+      
+        <p>
+          {{ "contact.policy1" | translate }}
+          <span>{{ "contact.policy2" | translate }}</span>
+          {{ "contact.policy3" | translate }}
+        </p>       
+
     </div>
+    @if (submitted && !isChecked.valid) {
+      <p class="check-error">{{ "contact.policyError" | translate }}</p>
+      }
+
     <div class="form-group full-width">
       <div class="button-div">
-        <button type="submit" [ngClass]="{ active: contactData.isChecked }">
+        <button type="submit" [ngClass]="{ active: contactData.isChecked}">
           {{ "contact.send" | translate }}
         </button>
       </div>

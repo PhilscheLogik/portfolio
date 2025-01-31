@@ -18,23 +18,20 @@ section {
   cursor: pointer;
 
   position: absolute;
-  top:0;
-  right: 0;
+  top: 0;
+  right: -20%;
 
   img {
     width: 100%;
     height: 100%;
     z-index: 1;
     transform: rotate(180deg);
-
   }
 
   &:hover {
     background-color: rgba($nav-color, 0.12);
   }
 }
-
-
 
 h2 {
   font-size: 60px;
@@ -90,23 +87,25 @@ h2 {
 .mail-img {
   background-image: url("./../../../assets/img/icons/icon _email_.svg");
 
-  &:hover{
+  &:hover {
     background-image: url("./../../../assets/img/icons/icon_email_full.svg");
   }
-
 }
 
 .tel-img {
   background-image: url("./../../../assets/img/icons/icon_phone_.svg");
 
-  &:hover{
+  &:hover {
     background-image: url("./../../../assets/img/icons/icon_phone_full.svg");
   }
 }
 
-
-
-
+.success-message {
+  font-size: 14px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
 
 .contact-form {
   display: grid;
@@ -117,6 +116,10 @@ h2 {
     display: flex;
     flex-direction: column;
     position: relative;
+
+    .error-message {
+      color: $hightlight;
+    }
 
     label {
       font-size: 14px;
@@ -246,10 +249,19 @@ h2 {
       border-radius: 50%;
       transition: background-image 0.3s ease, background-color 0.3s ease;
     }
+
+    &.errorCheck span {
+      background-image: url("./../../../assets/img/icons/check_error.svg");
+    }
   }
 
   .policy {
     @include displayFlex($jc: flex-start);
+
+    > div {
+      @include displayFlex($fd: column);
+    }
+
     p {
       font-size: 14px;
 
@@ -265,7 +277,20 @@ h2 {
   }
 }
 
+.check-error {
+  color: $hightlight;
+  font-size: 14px;
+
+  text-align: center;
+}
+
 /*-------------------------------------------------------*/
+
+@media (min-width: 1900px) {
+  .button {
+    right: 0;
+  }
+}
 
 @media (max-width: 1305px) {
   h2 {
@@ -276,6 +301,8 @@ h2 {
 @media (max-width: 1000px) {
   section {
     width: 85vw;
+
+    margin-bottom: 300px;
 
     .contact-form {
       display: grid;
@@ -305,7 +332,7 @@ h2 {
   .description {
     flex-direction: column-reverse;
 
-    div {
+    > div {
       font-size: 18px;
       margin: 10px 0;
       width: 100%;
@@ -321,6 +348,11 @@ h2 {
   h2 {
     font-size: 32px;
     margin-bottom: 30px;
+  }
+
+  .button {
+    top: 110%;
+    left: 50%;
   }
 }
 

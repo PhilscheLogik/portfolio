@@ -43,11 +43,15 @@
     "head": "Contact me",
     "text": "Still not sure if I'm the right person? Questions, interested in a collaboration or feedback on the portfolio? Simply fill in the form - you will receive a response as soon as possible.",
     "name": "Your name",
+    "nameError": "Your name is required",
     "mail": "Your Email",
+    "mailError": "Your Email is required",
     "msg": "Your Message",
+    "msgError": "Your Message is required",
     "policy1": "I've read the ",
     "policy2": "privacy policy",
     "policy3": " and agree to the processing of my data as outlined.",
+    "policyError": "We ask for acceptance of the privacy policy",
     "send": "Send"
   }
 }

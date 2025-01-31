@@ -25,11 +25,12 @@ export class ContactComponent {
   };
 
   mailTest = true;
+  submitted = false;
 
   http = inject(HttpClient);
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://franke-philipp.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -40,7 +41,14 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    this.submitted = true;
+    console.log('klick');
+    console.log(ngForm.submitted, ngForm.form.valid);
+
+    if (ngForm.submitted && ngForm.form.valid && this.contactData.isChecked) {
+
+      console.log('jap, grün');      
+
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({

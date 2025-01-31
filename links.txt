@@ -72,11 +72,17 @@ NICHT VERGESSEN:
     x   Kontakt Component gestalten Mobile (grob)
     x   Kontakt Component gestalten Mobile (fein)
 
+
 30.1.25
 
     x   Kontakt Formular Videos zu ende 
-    *   error msg einfügen
+    x   error msg einfügen
 
+31.1.25
+    x   error msg erscheinen bei dem korrketen Fehler
+
+
+    
 
     *   why me: nach dem Icon Typewriter Effekt darauf  
     
