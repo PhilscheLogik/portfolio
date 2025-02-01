@@ -53,5 +53,9 @@
     "policy3": " and agree to the processing of my data as outlined.",
     "policyError": "We ask for acceptance of the privacy policy",
     "send": "Send"
+  },
+  "proj":{
+    "title":"English text",
+    "textLol": "There could be something interesting here. Oh, probably not"
   }
 }

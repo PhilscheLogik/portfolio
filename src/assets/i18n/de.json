@@ -53,5 +53,9 @@
     "policy3": "gelesen und stimme der Verarbeitung der eigenen Daten wie beschrieben zu.",
     "policyError": "Wir bitten um eine Akzeptanz der Datenschutzbestimmungen",
     "send": "Senden"
+  },
+  "proj":{
+    "title":"Deutscher Text",
+    "textLol": "Hier könnte etwas interessantes stehen. Ach, wohl eher nicht"
   }
 }

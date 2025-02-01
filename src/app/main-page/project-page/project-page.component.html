@@ -1,2 +1,17 @@
-<p>project-page works!</p>
-<app-proj-section></app-proj-section>
+<section class="project-page">
+  <!-- Navbar -->
+  <nav class="navbar">
+    @for(project of projects; track $index){
+    <div
+      class="nav-item"
+      [class.active]="$index === selectedProjectIndex"
+      (click)="selectProject($index)"
+    >
+      {{ project.title | translate }} 
+    </div>
+    }
+  </nav> 
+  <app-proj-section
+    [project]="projects[selectedProjectIndex]"
+  ></app-proj-section>
+</section>
