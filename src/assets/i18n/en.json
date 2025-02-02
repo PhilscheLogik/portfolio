@@ -55,7 +55,11 @@
     "send": "Send"
   },
   "proj":{
-    "title":"English text",
-    "textLol": "There could be something interesting here. Oh, probably not"
+    "title1":"About the project",
+    "title2":"How I have organised my work process",
+    "title3":"My group work experience",    
+    "text1": "The Pokédex offers an interactive way to explore the fascinating world of Pokémon. Discover all your favourite Pokémon and their abilities.",
+    "text2": "I rely on a structured way of working. A short daily planning session is held every day to keep me focussed. I then work in short, intensive intervals. Regular reviews help me to continuously improve my process.",
+    "text3": "When working with others, I particularly value the exchange of ideas and perspectives. Daily live calls allow us to react quickly to challenges and find innovative solutions together."
   }
 }

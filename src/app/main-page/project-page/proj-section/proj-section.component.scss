@@ -3,5 +3,58 @@
 .proj-content {
     padding: 100px;
     background-color: rgba($nav-color, 0.12);    
-    border-radius: 8px;    
+    border-radius: 8px;   
+    min-height: 550px; 
+    @include displayFlex($fd:column,$jc: space-around);
+    border: none;
+  }
+
+  h2{
+     font-size: 28px;
+     font-family: jose;
+  }
+
+  p{
+    font-size: 18px;
+    font-family: jose;
+  }
+
+
+  .left-right-section{
+    width: 100%;
+    @include displayFlex();
+    flex:1;
+
+    padding-bottom: 10px;
+  }
+
+  .left{
+    width: 55%;
+    margin-right: 16px;
+
+    >div{
+      @include displayFlex($jc: flex-start, $ai:flex-start);
+      margin: 16px 0;
+    }
+    
+    img{
+      width: 29px;
+      height: 29px;
+      padding-right: 8px;
+
+    }
+  }
+
+  .right{
+    width: 45%;
+    @include displayFlex($fd:column,$jc: space-around);
+
+    img{
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  .middle{
+    width: 100%;
   }

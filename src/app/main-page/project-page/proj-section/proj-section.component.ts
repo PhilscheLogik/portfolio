@@ -14,5 +14,14 @@ import {
   styleUrl: './proj-section.component.scss',
 })
 export class ProjSectionComponent {
-  @Input() project!: { title: string; description: string };
+  @Input() project!: {
+    title: string;
+    description: string;
+    keyPoints: [
+      {
+        title: string;
+        text: string;
+      }
+    ];
+  };
 }

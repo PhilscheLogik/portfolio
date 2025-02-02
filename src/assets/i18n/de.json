@@ -54,8 +54,12 @@
     "policyError": "Wir bitten um eine Akzeptanz der Datenschutzbestimmungen",
     "send": "Senden"
   },
-  "proj":{
-    "title":"Deutscher Text",
-    "textLol": "Hier könnte etwas interessantes stehen. Ach, wohl eher nicht"
+  "proj": {
+    "title1": "Über das Projekt",
+    "title2": "Wie ich meinen Arbeitsprozess organisiert habe",
+    "title3": "Meine Erfahrung mit Gruppenarbeit",
+    "text1": "Der Pokédex Er bietet eine interaktive Möglichkeit, die faszinierende Welt der Pokémon zu erkunden. Entdecke alle deine Lieblings-Pokémon und ihre Fähigkeiten.",
+    "text2": "Ich setze auf eine strukturierte Arbeitsweise. Täglich wird eine kurze Tagesplanung abgehalten, um fokussiert zu sein. Anschließend arbeite ich in kurzen, intensiven Intervallen. Regelmäßige Rückblicke helfen mir, meinen Prozess kontinuierlich zu verbessern.",
+    "text3": "In der Zusammenarbeit mit anderen schätze ich besonders den Austausch von Ideen und Perspektiven. Durch tägliche Live-Calls können wir schnell auf Herausforderungen reagieren und gemeinsam innovative Lösungen finden."
   }
 }

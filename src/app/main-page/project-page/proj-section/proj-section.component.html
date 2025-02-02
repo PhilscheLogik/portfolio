@@ -1,4 +1,28 @@
-<div class="proj-content">
-    <h2>{{ project.title | translate }}</h2>
-    <p>{{ project.description | translate }}</p>
+<section class="proj-content">
+  <div class="left-right-section">
+    <div class="left">
+      @for (item of project.keyPoints; track $index) {
+      <div>
+        <img src="./../../../../assets/img/icons/ellipse_dot.svg" />
+        <div>
+          <h2>{{ project.keyPoints[$index].title | translate }}</h2>
+          <p>{{ project.keyPoints[$index].text | translate }}</p>
+        </div>
+      </div>
+      }
+    </div>
+
+    <div class="right">
+      <span>Techno</span>
+      <span>ICONS</span>
+      <img src="./../../../../assets/img/projects/Pokedex_cover.png" />
+    </div>
   </div>
+
+  <div class="middle">
+    <div>
+      <button>Live Test</button>
+      <button>GitHub</button>
+    </div>
+  </div>
+</section>
