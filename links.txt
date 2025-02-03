@@ -100,6 +100,20 @@ NICHT VERGESSEN:
 
 
 
+Lets talk button ref 
+
+Header sticky 
+
+ Footer mit Datenschutz
+
+ Links zu den Projekten
+
+ Typing Effect
+
+ 
+
+
+
 
 BUGS:
 * Comp. profile-card 

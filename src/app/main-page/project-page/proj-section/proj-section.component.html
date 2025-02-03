@@ -1,11 +1,12 @@
 <section class="proj-content">
   <div class="left-right-section">
     <div class="left">
+      <span class="duration">{{ project.duration | translate }}</span>
       @for (item of project.keyPoints; track $index) {
       <div>
         <img src="./../../../../assets/img/icons/ellipse_dot.svg" />
         <div>
-          <h2>{{ project.keyPoints[$index].title | translate }}</h2>
+          <h3>{{ project.keyPoints[$index].title | translate }}</h3>
           <p>{{ project.keyPoints[$index].text | translate }}</p>
         </div>
       </div>
@@ -13,16 +14,33 @@
     </div>
 
     <div class="right">
-      <span>Techno</span>
-      <span>ICONS</span>
-      <img src="./../../../../assets/img/projects/Pokedex_cover.png" />
+      <h4>{{ project.title | translate }}</h4>
+      <div>
+        <div>
+          <span>{{ project.tech | translate }}</span>
+          <div class="icon-section img-icon">
+            @for (item of project.techIcons; track $index) {
+            <img [src]="project.techIcons[$index].imgPath" />
+            }
+          </div>
+          <span class="icon-section txt-icon"> {{ project.techText }} </span>
+        </div>
+        <span class="txt-icon"> {{ project.duration | translate }} </span>
+      </div>
+
+      <img [src]="project.imgPath" />
     </div>
   </div>
 
   <div class="middle">
+    @if(project.id != 4){
     <div>
-      <button>Live Test</button>
-      <button>GitHub</button>
+      <a class="button" target="_blank" [href]="project.projectPath"
+        >Live Test</a
+      >
+
+      <a class="button" target="_blank" [href]="project.gitHubPath">GitHub</a>
     </div>
+    }
   </div>
 </section>

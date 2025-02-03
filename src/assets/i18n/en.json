@@ -54,12 +54,31 @@
     "policyError": "We ask for acceptance of the privacy policy",
     "send": "Send"
   },
-  "proj":{
-    "title1":"About the project",
-    "title2":"How I have organised my work process",
-    "title3":"My group work experience",    
+  "proj": {
+    "title":"My Projects",
+
+    "name": "Project",
+    "title1": "About the project",
+    "title2": "How I have organised my work process",
+    "title3": "My group work experience",
+
     "text1": "The Pokédex offers an interactive way to explore the fascinating world of Pokémon. Discover all your favourite Pokémon and their abilities.",
     "text2": "I rely on a structured way of working. A short daily planning session is held every day to keep me focussed. I then work in short, intensive intervals. Regular reviews help me to continuously improve my process.",
-    "text3": "When working with others, I particularly value the exchange of ideas and perspectives. Daily live calls allow us to react quickly to challenges and find innovative solutions together."
+    "text3": "When working with others, I particularly value the exchange of ideas and perspectives. Daily live calls allow us to react quickly to challenges and find innovative solutions together.",
+
+    "text4": "Dive into the depths of the ocean and explore sunken ships in this exciting 2D sidescroller called ‘The Sunken Ships’! Fend off dangerous creatures and uncover the secrets of the deep.",
+    "text5": "I rely on a structured way of working. A short daily planning session is held every day to keep me focussed. I then work in short, intensive intervals. Regular reviews help me to continuously improve my process.",
+    "text6": "When working with others, I particularly value the exchange of ideas and perspectives. Daily live calls allow us to react quickly to challenges and find innovative solutions together.",
+
+    "text7": "There will be a text about the ‘Join’ project here in future. Due to the current situation, this has not yet been finalised.",
+    "text8": "I rely on a structured way of working. A short daily planning session is held every day to keep me focussed. I then work in short, intensive intervals. Regular reviews help me to continuously improve my process.",
+    "text9": "This is where future experiences regarding the project and teamwork are recorded.",
+
+    "text10": "I am currently working on developing a Simple Customer Relationship Management system working with CRUD functionality.This is for me both exciting and challenging. In my work the key to success lies in a good planning and execution tasks using drag and drop functions, assign users and categories. ",
+
+    "tech": "Technologies: ",
+    "dura1": "Duration: 1.5 weeks",
+    "dura2": "Duration: 4 weeks",
+    "dura3": "Duration: X weeks"
   }
 }

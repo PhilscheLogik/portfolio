@@ -1,35 +1,119 @@
 @import "./../../../styles.scss";
 
+section {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-family: jose;
+}
+
 .project-page {
-    display: flex;
-    flex-direction: column;
-    width: 85vw; 
-    border: none;   
+  @include displayFlex($fd: column, $g: 0);
+
+  border: none;
+}
+
+h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: anta;
+  color: $nav-color;
+  margin-bottom: 90px;
+}
+
+
+
+.navbar {
+  display: flex;
+  gap: 16px;
+  background-color: $bg-color;
+  padding: 12px 20px 0 20px;
+  border: none;
+  width: 85vw;
+  max-width: 1440px;
+}
+
+.nav-item {
+  padding: 33px 30px;
+  cursor: pointer;
+  background-color: $bg-color;
+  color: $nav-color;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: jose;
+  font-size: 30px;
+
+  border-radius: 30px 30px 0 0;
+}
+
+.nav-item.active {
+  background-color: rgba($nav-color, 0.12);
+  color: $text-color;
+}
+
+.project-section {
+  background-color: rgba($nav-color, 0.12);
+  border-radius: 0 20px 20px 20px;
+
+  // width:100vw;
+  // @include displayFlex();
+}
+
+.shortName {
+  display: none;  
+}
+
+/*-----------------------------------------*/
+
+@media (max-width: 1000px) {
+  .fullname {
+    display: none;
   }
-  
+
+  .shortName {
+    font-size: 18px;
+    text-align: center;
+
+    display: inline-block;
+  }
+
+  section {
+    margin-top: 25px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  h3{
+    display: none;
+  }
+
+  h4 {    
+    display: block;
+  }
+
   .navbar {
-    display: flex;
-    gap: 16px;
-    background-color: $bg-color;
-    padding: 12px 20px 0 20px;
+    width: 95vw;
+    padding: 0;
   }
-  
+
   .nav-item {
-    padding: 33px 30px;
-    cursor: pointer;
-    background-color: $bg-color;
-    color: $nav-color;
-    transition: background-color 0.3s, color 0.3s;  
-    font-family: jose;
-    font-size: 30px;
-
-    border-radius: 30px 30px 0 0;
-
-  }
-  
-  .nav-item.active {
-    background-color: rgba($nav-color, 0.12);
+    padding: 8px 2.5px;
     color: $text-color;
+    border-radius: 15px 15px 0 0;
   }
-  
 
+  .nav-item.active {
+    color: $nav-color;
+  }
+}
+
+
+@media (max-width: 380px) {
+  
+  .shortName {
+    font-size: 16px;
+
+    display: inline-block;
+  }
+}

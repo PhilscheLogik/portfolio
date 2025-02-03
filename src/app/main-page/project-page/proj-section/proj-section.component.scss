@@ -1,60 +1,205 @@
 @import "./../../../../styles.scss";
 
 .proj-content {
-    padding: 100px;
-    background-color: rgba($nav-color, 0.12);    
-    border-radius: 8px;   
-    min-height: 550px; 
-    @include displayFlex($fd:column,$jc: space-around);
-    border: none;
+  // background-color: rgba($nav-color, 0.12);
+  border-radius: 8px;
+  min-height: 550px;
+  @include displayFlex($fd: column, $jc: space-around);
+  border: none;
+  padding: 50px;
+}
+
+h3 {
+  font-size: 28px;
+  font-family: jose;
+  font-weight: lighter;
+  margin-bottom: 8px;
+}
+
+h4{
+  display: none;
+  font-size: 24px;
+  margin-bottom: 10px;  
+  color: $nav-color;
+}
+
+p {
+  font-size: 18px;
+  font-family: jose;
+}
+
+.left-right-section {
+  width: 100%;
+  @include displayFlex();
+  flex: 1;
+
+  padding-bottom: 10px;
+}
+
+.duration {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.left {
+  width: 55%;
+  height: 100%;
+  margin-right: 16px;
+
+  position: relative;
+
+  > div {
+    @include displayFlex($jc: flex-start, $ai: flex-start);
+    margin: 20px 0;
   }
 
-  h2{
-     font-size: 28px;
-     font-family: jose;
+  img {
+    width: 29px;
+    height: 29px;
+    padding-right: 8px;
   }
+}
 
-  p{
+.right {
+  width: 45%;
+  height: 100%;
+  @include displayFlex($fd: column, $jc: space-around);
+
+  img {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+.icon-section {
+  @include displayFlex();
+
+  img {
+    width: 36px;
+    height: 36px;
+    padding-right: 12px;
+    border-radius: 0%;
+  }
+}
+
+.middle {
+  width: 75%;
+  @include displayFlex($jc: flex-end);
+
+  margin-bottom: 20px;
+
+  div {
+    @include displayFlex($jc: space-around);
+  }
+}
+
+.button {
+  padding: 13px 30px;
+  border-radius: 100px;
+  border: 1px solid $nav-color;
+  color: $nav-color;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 16px;
+
+  &:hover {
+    background-color: $nav-color;
+    color: $bg-color;
+  }
+}
+
+.txt-icon {
+  display: none;
+}
+
+/*---------------------------------------------*/
+
+@media (max-width: 1000px) {
+  .img-icon,.duration {
+    display: none;
+  }
+  
+
+  .txt-icon {
     font-size: 18px;
-    font-family: jose;
+
+    display: block;
+  }
+
+  section {
+    margin-top: 25px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  h3{
+    font-size: 18px;
+    color: $nav-color;
+  }
+
+  h4 {    
+    display: block;
+  }
+
+  .proj-content {
+    height: 100%;
+    width: 95vw;
+
+    align-items: center;
+
+    padding: 8px;
+  }
+
+  .left-right-section {
+    flex-direction: column-reverse;
+    padding-bottom: 10px;    
   }
 
 
-  .left-right-section{
+  .left {
     width: 100%;
-    @include displayFlex();
-    flex:1;
-
-    padding-bottom: 10px;
+    height: 100%;    
   }
-
-  .left{
-    width: 55%;
-    margin-right: 16px;
-
-    >div{
-      @include displayFlex($jc: flex-start, $ai:flex-start);
-      margin: 16px 0;
-    }
-    
-    img{
-      width: 29px;
-      height: 29px;
-      padding-right: 8px;
-
-    }
-  }
-
-  .right{
-    width: 45%;
-    @include displayFlex($fd:column,$jc: space-around);
-
-    img{
+  
+  .right {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  
+    img {
       width: 100%;
-      border-radius: 20px;
+      border-radius: 50px;
+      padding: 0 16px;
     }
-  }
 
-  .middle{
-    width: 100%;
+    span{
+      font-size: 14px;
+    }
+
+
+    >div >div{
+      @include displayFlex($jc: flex-start);
+      span{
+        font-size: 14px;
+      }
+      
+    }
+
+
   }
+  
+
+  
+  .middle {
+    width: 100%;
+    justify-content: center;
+
+    margin-top: 30px;
+   
+  }
+}

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import {
   TranslatePipe,
@@ -15,6 +15,14 @@ import {
 })
 export class ProjSectionComponent {
   @Input() project!: {
+    techText: string;
+    id: number;
+    tech: string;
+    techIcons: [imgPath: any];
+    projectPath: string;
+    gitHubPath: string;
+    imgPath: string;
+    duration: string;
     title: string;
     description: string;
     keyPoints: [

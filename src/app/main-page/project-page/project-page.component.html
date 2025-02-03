@@ -1,4 +1,5 @@
 <section class="project-page">
+  <h2>{{ "proj.title" | translate }}</h2>
   <!-- Navbar -->
   <nav class="navbar">
     @for(project of projects; track $index){
@@ -7,11 +8,13 @@
       [class.active]="$index === selectedProjectIndex"
       (click)="selectProject($index)"
     >
-      {{ project.title | translate }} 
+      <span class="fullname">{{ project.title | translate }}</span>
+      <span class="shortName">{{ project.id | translate }}. {{ project.name | translate }}</span>
     </div>
     }
-  </nav> 
-  <app-proj-section
+  </nav>
+
+  <app-proj-section class="project-section"
     [project]="projects[selectedProjectIndex]"
   ></app-proj-section>
 </section>
