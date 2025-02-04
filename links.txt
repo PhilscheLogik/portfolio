@@ -100,9 +100,9 @@ NICHT VERGESSEN:
 
 
 
-Lets talk button ref 
+* Lets talk button ref 
 
-Header sticky 
+* Header unsticky machen ab 1000px
 
  Footer mit Datenschutz
 

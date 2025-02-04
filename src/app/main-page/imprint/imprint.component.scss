@@ -1,0 +1,40 @@
+@import "./../../../styles.scss";
+
+section{
+    @include displayFlex($fd: column);
+    min-height: 95vh;
+}
+
+
+h2{
+    font-size: 42px;
+    margin-bottom: 40px;
+    font-family: anta;
+}
+
+p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: jose;
+}
+
+div{
+    margin: 16px auto;
+}
+
+
+.button {
+    width: 90px;
+    height: 38px;
+    padding: 8px 19.5px ;
+    border-radius: 100px;
+    border: 1px solid $nav-color;
+    color: $nav-color;
+    cursor: pointer; 
+    text-decoration: none;
+    
+  
+    &:hover {
+      background-color: rgba($nav-color, 0.12);
+    }
+  }

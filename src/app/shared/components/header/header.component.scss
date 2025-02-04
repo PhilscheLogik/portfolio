@@ -228,6 +228,13 @@ header {
 /*-------------------------------------------------------*/
 
 @media (max-width: 1000px) {
+
+  :host {
+    display: block;
+    position:static;   
+  }
+
+
   header {
     background: none;
     @include posi($p: absolute, $t: 4%, $l: 0);

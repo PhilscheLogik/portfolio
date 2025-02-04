@@ -1,20 +1,31 @@
 <footer>
   <section class="footer-section">
     <div>
-      <p>{{ "footer.imprint" | translate }}</p>
+      <a routerLink="imprint">{{ "footer.imprint" | translate }}</a>
       <p>© Philipp Franke 2024</p>
     </div>
     <div class="logo-picture">
-      <img
-        class="dark"
-        src="./assets/img/logo/logo_icon_dark.png"
-        alt="logo"
-      />     
+      <img class="dark" src="./assets/img/logo/logo_icon_dark.png" alt="logo" />
       <div>
         <p>P. Franke</p>
         <p><span>developer</span></p>
       </div>
     </div>
-    <div>ICONS</div>
+    <section class="icon-section">
+      <a class="mail-link"
+        href="mailto:Franke.Phil89@googlemail.com"
+        target="_blank"        
+      ></a>
+
+      <a class="github-link"
+        href="https://github.com/PhilscheLogik"
+        target="_blank"        
+      ></a>
+
+      <a class="linkedin-link"
+        href="#"
+        target="_blank"        
+      ></a>
+    </section>
   </section>
 </footer>

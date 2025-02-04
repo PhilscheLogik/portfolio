@@ -82,6 +82,7 @@
     "dura3": "Duration: X weeks"
   },
   "footer":{
-    "imprint":"Legal notice"
+    "imprint":"Legal notice",
+    "back":"Back"
   }
 }

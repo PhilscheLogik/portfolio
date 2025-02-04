@@ -9,8 +9,13 @@ footer {
 
 .footer-section {
   @include displayFlex($jc: space-between);
-  padding: 71px 0;
+  padding: 71px 110px;
   max-width: 1440px;
+  width: 100%;
+}
+
+a{
+    text-decoration: none;
 }
 
 .logo-picture {
@@ -30,5 +35,43 @@ footer {
   }
 }
 
+.mail-link {
+    background-image: url("./../../../../assets/img/social_icons/mail_lightblue.png");
+  
+    &:hover {
+      background-image: url("./../../../../assets/img/social_icons/mail_white_hover.png");
+    }
+  }
+
+  .linkedin-link {
+    background-image: url("./../../../../assets/img/social_icons/linkedin_lightblue.png");
+  
+    &:hover {
+      background-image: url("./../../../../assets/img/social_icons/linkedin_white_hover.png");
+    }
+  }
+
+  .github-link {
+    background-image: url("./../../../../assets/img/social_icons/github_lightblue.png");
+  
+    &:hover {
+      background-image: url("./../../../../assets/img/social_icons/github_white_hover.png");
+    }
+  }
+
+.icon-section {
+  @include displayFlex();
+  a {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+/*---------------------------------------------------*/
 @media (max-width: 1000px) {
 }

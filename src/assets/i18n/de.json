@@ -83,6 +83,7 @@
     "dura3": "Dauer: X Wochen"
   },
   "footer":{
-    "imprint":"Impressum"
+    "imprint":"Impressum",
+    "back":"Zurück"
   }
 }

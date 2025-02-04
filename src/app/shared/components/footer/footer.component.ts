@@ -6,11 +6,12 @@ import {
   TranslateDirective,
   TranslateService,
 } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule, TranslatePipe, TranslateDirective],
+  imports: [CommonModule, TranslatePipe, TranslateDirective,RouterLink],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
