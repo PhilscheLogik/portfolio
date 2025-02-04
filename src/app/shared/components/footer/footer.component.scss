@@ -1,8 +1,34 @@
 @import "./../../../../styles.scss";
 
-footer {   
-     
-    width: 100%;  
-    font-size: 18px;
-    background: $nav-color;
+footer {
+  width: 100%;
+  font-size: 18px;
+  background: $nav-color;
+  @include displayFlex();
+}
+
+.footer-section {
+  @include displayFlex($jc: space-between);
+  padding: 71px 0;
+  max-width: 1440px;
+}
+
+.logo-picture {
+  flex: 1;
+  @include displayFlex($fd: column, $g: 0);
+  width: 58px;
+  height: 72px;
+
+  p {
+    font-family: anta;
+    font-size: small;
+
+    span {
+      font-family: jose;
+      color: $bg-color;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
 }

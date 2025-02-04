@@ -81,5 +81,8 @@
     "dura1": "Dauer: 1,5 Wochen",
     "dura2": "Dauer: 4 Wochen",
     "dura3": "Dauer: X Wochen"
+  },
+  "footer":{
+    "imprint":"Impressum"
   }
 }

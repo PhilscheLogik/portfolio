@@ -80,5 +80,8 @@
     "dura1": "Duration: 1.5 weeks",
     "dura2": "Duration: 4 weeks",
     "dura3": "Duration: X weeks"
+  },
+  "footer":{
+    "imprint":"Legal notice"
   }
 }

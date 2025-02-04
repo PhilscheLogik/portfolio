@@ -1,5 +1,14 @@
 @import "./../../../../styles.scss";
 
+
+
+:host {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 1000; // Damit der Header über anderen Elementen bleibt 
+}
+
 .burger,
 .open,
 .light {

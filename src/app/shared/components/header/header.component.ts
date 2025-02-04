@@ -1,19 +1,22 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
-import {TranslatePipe, TranslateDirective, TranslateService} from "@ngx-translate/core";
+import {
+  TranslatePipe,
+  TranslateDirective,
+  TranslateService,
+} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [CommonModule, TranslatePipe, TranslateDirective],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 
 // https://ngx-translate.org/getting-started/translating-your-components/
 export class HeaderComponent {
-
   selectedItem: number | null = null;
   menuOpen: boolean = true;
   currentItem: number | null = null;
@@ -36,8 +39,9 @@ export class HeaderComponent {
   scrollToTop(): void {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
-    });}
+      behavior: 'smooth',
+    });
+  }
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
@@ -45,11 +49,7 @@ export class HeaderComponent {
 
   constructor(private translate: TranslateService) {}
 
-  changeLang(lang: string){
+  changeLang(lang: string) {
     this.translate.use(lang);
   }
-
-
-
-
 }
