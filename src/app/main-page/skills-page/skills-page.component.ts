@@ -56,4 +56,11 @@ export class SkillsPageComponent {
       title: 'Scrum'
     }
   ];
+
+  scrollTo(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView();
+    }
+  }
 }

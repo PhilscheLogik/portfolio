@@ -111,7 +111,7 @@
       
         <p>
           {{ "contact.policy1" | translate }}
-          <span>{{ "contact.policy2" | translate }}</span>
+          <a routerLink="policy">{{ "contact.policy2" | translate }}</a>
           {{ "contact.policy3" | translate }}
         </p>       
 
@@ -128,4 +128,14 @@
       </div>
     </div>
   </form>
+  <div class="modal-overlay" *ngIf="showModal"></div>
+
+<!-- Das eigentliche Modal -->
+<div class="modal" *ngIf="showModal">
+  <div class="modal-content">
+    <h2>{{ "msg.head" | translate }}</h2>
+    <p>{{ "msg.msg" | translate }}</p>
+    <button (click)="closeModal()">OK</button>
+  </div>
+</div>
 </section>

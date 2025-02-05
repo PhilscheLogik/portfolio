@@ -1,10 +1,12 @@
-<section >
+<section>
   <h2>{{ "why.head" | translate }}</h2>
   <div class="content">
     <div class="left">
       <div class="location-icon"></div>
-      <p><span>{{ "why.leftPartOne" | translate }}</span> {{ "why.leftPartTwo" | translate }}</p>
-      
+      <p>
+        <span>{{ "why.leftPartOne" | translate }}</span>
+        {{ "why.leftPartTwo" | translate }}
+      </p>
     </div>
 
     <div class="right">
@@ -12,7 +14,9 @@
         {{ "why.rightText" | translate }}
       </p>
       <div>
-        <div class="button">{{ "why.button" | translate }}</div>
+        <a (click)="scrollTo('contact-section')" class="button">{{
+          "why.button" | translate
+        }}</a>
       </div>
     </div>
   </div>

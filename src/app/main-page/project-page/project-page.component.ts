@@ -25,7 +25,7 @@ export class ProjectPageComponent {
       this.loadTranslations();
     });
   }
-
+  
   loadTranslations(): void {
     this.projects = [
       {
@@ -35,7 +35,7 @@ export class ProjectPageComponent {
         tech: this.translate.instant('proj.tech'),
         imgPath: './../../../../assets/img/projects/Pokedex_cover.png',
         gitHubPath: 'https://github.com/PhilscheLogik/pokedex',
-        projectPath: 'https://github.com/PhilscheLogik/pokedex',
+        projectPath: 'https://pokedex.franke-philipp.de/index.html',
         name:this.translate.instant('proj.name'),
         keyPoints: [
           {
@@ -75,7 +75,7 @@ export class ProjectPageComponent {
         tech: this.translate.instant('proj.tech'),
         imgPath: './../../../../assets/img/projects/TSS_cover.png',
         gitHubPath: 'https://github.com/PhilscheLogik/game_JnR',
-        projectPath: 'https://github.com/PhilscheLogik/game_JnR',
+        projectPath: 'https://the-sunken-ships.franke-philipp.de/index.html',
         name:this.translate.instant('proj.name'),
         keyPoints: [
           {

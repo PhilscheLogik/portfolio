@@ -84,5 +84,10 @@
   "footer":{
     "imprint":"Legal notice",
     "back":"Back"
+  },
+
+  "msg":{
+    "head":"Message sent!",
+    "msg":"Your message has been sent successfully."
   }
 }

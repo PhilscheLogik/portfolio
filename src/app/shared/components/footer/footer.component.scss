@@ -8,18 +8,21 @@ footer {
 }
 
 .footer-section {
-  @include displayFlex($jc: space-between);
+  
+  // gap: 16px;  
+  @include displayFlex($jc:space-between);
+
   padding: 71px 110px;
   max-width: 1440px;
   width: 100%;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 .logo-picture {
-  flex: 1;
+  
   @include displayFlex($fd: column, $g: 0);
   width: 58px;
   height: 72px;
@@ -36,28 +39,28 @@ a{
 }
 
 .mail-link {
-    background-image: url("./../../../../assets/img/social_icons/mail_lightblue.png");
-  
-    &:hover {
-      background-image: url("./../../../../assets/img/social_icons/mail_white_hover.png");
-    }
-  }
+  background-image: url("./../../../../assets/img/social_icons/mail_lightblue.png");
 
-  .linkedin-link {
-    background-image: url("./../../../../assets/img/social_icons/linkedin_lightblue.png");
-  
-    &:hover {
-      background-image: url("./../../../../assets/img/social_icons/linkedin_white_hover.png");
-    }
+  &:hover {
+    background-image: url("./../../../../assets/img/social_icons/mail_white_hover.png");
   }
+}
 
-  .github-link {
-    background-image: url("./../../../../assets/img/social_icons/github_lightblue.png");
-  
-    &:hover {
-      background-image: url("./../../../../assets/img/social_icons/github_white_hover.png");
-    }
+.linkedin-link {
+  background-image: url("./../../../../assets/img/social_icons/linkedin_lightblue.png");
+
+  &:hover {
+    background-image: url("./../../../../assets/img/social_icons/linkedin_white_hover.png");
   }
+}
+
+.github-link {
+  background-image: url("./../../../../assets/img/social_icons/github_lightblue.png");
+
+  &:hover {
+    background-image: url("./../../../../assets/img/social_icons/github_white_hover.png");
+  }
+}
 
 .icon-section {
   @include displayFlex();
@@ -71,7 +74,33 @@ a{
   }
 }
 
-
 /*---------------------------------------------------*/
 @media (max-width: 1000px) {
+  .footer-section {
+    display: grid;
+    gap: 16px;
+    padding: 30px 50px;
+    grid-template-columns: 1fr; // Eine Spalte
+    grid-template-rows: auto;
+    grid-template-areas:
+      "b" "c"
+      "a"; // Neue Reihenfolge
+
+    .info {
+      grid-area: a;
+      @include displayFlex();
+    }
+    .logo-picture {
+      grid-area: b;
+    }
+    .icon-section {
+      grid-area: c;
+    }
+
+    >div{
+      width: 100%;
+    }
+
+
+  }
 }

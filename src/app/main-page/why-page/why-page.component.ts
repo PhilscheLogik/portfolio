@@ -13,4 +13,12 @@ import {
   templateUrl: './why-page.component.html',
   styleUrl: './why-page.component.scss',
 })
-export class WhyPageComponent {}
+export class WhyPageComponent {
+
+  scrollTo(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView();
+    }
+  }
+}

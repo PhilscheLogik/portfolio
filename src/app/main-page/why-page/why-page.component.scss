@@ -44,6 +44,11 @@ h2 {
   font-size: 18px;
   width: 50%;
   padding-left: 5%;
+
+  div{
+    margin-top: 30px;
+  }
+
 }
 
 .button {
@@ -52,6 +57,8 @@ h2 {
   border: 1px solid $nav-color;
   color: $nav-color;
   cursor: pointer;
+  text-decoration: none;
+  
 
   &:hover {
     background-color: rgba($nav-color, 0.12);

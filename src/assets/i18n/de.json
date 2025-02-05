@@ -8,7 +8,7 @@
 
   "why": {
     "head": "Warum ich",
-    "leftPartOne": "Ich bin ",
+    "leftPartOne": "Ich bin",
     "leftPartTwo": "in Leipzig ..|",
     "rightText": "Warum ich? Ich habe lange überlegt, aber noch keine Antwort darauf gefunden. Wenn jemanden etwas einfällt, schreibt mir gerne eine Nachricht - ich freue mich :)",
     "button": "Lass uns reden"
@@ -55,7 +55,7 @@
     "send": "Senden"
   },
   "proj": {
-    "title":"Meine Projekte",
+    "title": "Meine Projekte",
 
     "name": "Projekt",
 
@@ -82,8 +82,13 @@
     "dura2": "Dauer: 4 Wochen",
     "dura3": "Dauer: X Wochen"
   },
-  "footer":{
-    "imprint":"Impressum",
-    "back":"Zurück"
+  "footer": {
+    "imprint": "Impressum",
+    "back": "Zurück"
+  },
+
+  "msg": {
+    "head": "Nachricht gesendet!",
+    "msg": "Ihre Nachricht wurde erfolgreich übermittelt."
   }
 }
