@@ -4,7 +4,6 @@
   height: calc(100vh - 104px - 100px);
   width: 85vw;
   max-width: 1440px;
-  max-height: 1200px;
 
   margin-top: 50px;
   margin-bottom: 50px;
@@ -17,6 +16,7 @@
 
 .profile-photo {
   height: 100%;
+  max-height: 520px;
   width: 50%;
   @include displayFlex($g: 0);
   flex: 1;
@@ -25,7 +25,7 @@
     height: 100%;
     width: 100%;
     @include posi($p: relative);
-    @include displayFlex($ai: flex-end, $g: 0);
+    @include displayFlex($g: 0);
 
     img {
       background: none;
@@ -37,10 +37,11 @@
     .myself {
       max-height: 100%;
       max-width: 100%;
-      @include posi($b: 0, $l: 50%);
-      transform: translate(-50%, 0%);
+      @include posi($r: 50%, $l: 50%);
+      transform: translate(-50%, -10%);
       z-index: 2;
       pointer-events: none;
+      max-height: 650px;
     }
 
     .rotation {
@@ -54,6 +55,7 @@
   opacity: 0;
   transition: opacity 0.75s ease-in-out;
   z-index: 1;
+  max-height: 520px;
 }
 
 .hover.visible {
@@ -78,6 +80,7 @@ h2 {
 }
 
 .title-section {
+  width: 50%;
   height: 100%;
   padding: 0;
   @include displayFlex($fd: column, $jc: space-around);
@@ -146,6 +149,34 @@ h2 {
 /*-------------------------------------------------------*/
 /*-------------------------------------------------------*/
 
+@media (max-height: 900px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+  .profile-photo {
+    max-height: 300px;
+
+    .image-section {
+      .myself {
+        max-height: 400px;
+      }
+    }
+  }
+}
+
+@media (max-height: 650px) {
+  .overshoot-section {
+    margin-bottom: 8px;
+  }
+  .landing-section {
+    align-items: flex-end;
+  }
+}
+
 @media (max-width: 1300px) {
   h1 {
     font-size: 68px;
@@ -168,7 +199,33 @@ h2 {
 
 @media (max-width: 1000px) {
   .profile-photo {
-    width: 100%;
+    .image-section {
+      height: 100%;
+      width: 100%;
+      @include posi($p: relative);
+      @include displayFlex($g: 0);
+
+      img {
+        background: none;
+        max-height: 100%;
+        max-width: 80%;
+        object-fit: cover;
+      }
+
+      .myself {
+        max-height: 100%;
+        max-width: 100%;
+        @include posi($r: 50%, $l: 50%);
+        transform: translate(-50%, -10%);
+        z-index: 2;
+        pointer-events: none;
+        max-height: 650px;
+      }
+
+      .rotation {
+        transform: rotate(7deg);
+      }
+    }
   }
 
   .title-section {
@@ -186,6 +243,7 @@ h2 {
     flex-direction: column;
     height: 95vh;
     margin-top: 75px;
+    justify-content: center;
   }
 
   .icon-section,

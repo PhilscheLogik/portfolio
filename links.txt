@@ -17,13 +17,6 @@ FRAGEN:
     +   Darf man overflow-y: auto;, wenn zu viel Text da ist? -> jo
     +   Muss das Ziehen via Maus/Touch funktionieren oder reicht die scrollbar -x? -> einfach den Balken designen
 
-
-NICHT VERGESSEN:
-    - bei der Why-me muss der Button zum Kontakt verbunden werden
-    - bei der Kontakt muss der Button nach ganz oben leiten können
-    - bei großer Height ist der Arrow down falsch platziert
-
-
 23.1.25
     x   Arrow down erstellen (einfach bei Lass reden Button kopieren)
     x   Arrow down verlinken (einfach bei Warum ich orientieren)
@@ -82,36 +75,17 @@ NICHT VERGESSEN:
     x   error msg erscheinen bei dem korrketen Fehler
 
 
-    
-
-    *   why me: nach dem Icon Typewriter Effekt darauf  
-    
+    *   Kontakt responsive müsste noch 'Let us work together' rein
+    *   Footer mit Datenschutz auch in Englisch
+    *   why me: nach dem Icon Typewriter Effekt darauf 
     *   Überschrift bei Ref. soll sich mitziehen  
-    *   Skill section responsive Lets talk Button hinzufügen (aus der why-me Section nehmen)
-    *   Skill section responsive Span für die left Section ausblenden (aus der why-me Section nehmen)  
-    *   Header muss sticky gemacht werden ohne postion: sticky, weil funktioniert nicht
-    *   Footer design anpassen  
-
-
-
-
-    *   Mail bei der php datei ändern
-    *   nochmal bei contact ts bei post das endPoint prüfen/informieren
-
-
-
-* Lets talk button ref 
-
-* Header unsticky machen ab 1000px
-
- Footer mit Datenschutz
-
- Links zu den Projekten
-
- Typing Effect
-
- 
-
+    *   Skill section responsive Span für die left Section ausblenden 
+    *   www wird nicht angezeigt
+    *   Header immer unten, auch bei großen Bildschirmen
+    *   statt Projekt die Namen bei responsive anzeigen lassen (ist aber nicht mockup konform)
+    *   Kontaktformular komplett rot nach dem senden -> muss wieder blau sein
+    *   policy/Impressum ist beim klick unten -> sollte oben sein
+    *   Impressum responsive machen - vergessen^^
 
 
 

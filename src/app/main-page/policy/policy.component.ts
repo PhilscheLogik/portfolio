@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-policy',
   standalone: true,
-  imports: [CommonModule, TranslatePipe, TranslateDirective,RouterLink],
+  imports: [CommonModule, TranslatePipe, TranslateDirective, RouterLink],
   templateUrl: './policy.component.html',
   styleUrl: './policy.component.scss'
 })
