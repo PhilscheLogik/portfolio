@@ -136,14 +136,41 @@ h2 {
 .icon-section {
   @include displayFlex($fd: column);
   @include posi($t: 0, $r: 0);
-  img {
-    width: 30px;
+}
+
+.mail-link {
+  background-image: url("./../../../assets/img/social_icons/mail_dark.png");
+
+  &:hover {
+    background-image: url("./../../../assets/img/social_icons/mail_lightblue_hover.png");
   }
 }
 
-.icon-part {
-  width: 100%;
-  height: 60px;
+.linkedin-link {
+  background-image: url("./../../../assets/img/social_icons/linkedin_dark.png");
+
+  &:hover {
+    background-image: url("./../../../assets/img/social_icons/linkedin_lightblue_hover.png");
+  }
+}
+
+.github-link {
+  background-image: url("./../../../assets/img/social_icons/github_dark.png");
+
+  &:hover {
+    background-image: url("./../../../assets/img/social_icons/github_lightblue_hover.png");
+  }
+}
+
+.github-link,
+.linkedin-link,
+.mail-link {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  width: 30px;
+  height: 30px;
 }
 
 /*-------------------------------------------------------*/

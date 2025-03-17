@@ -62,53 +62,20 @@
 
   </section>
 
-  <section class="icon-section">
-    <a
-      href="mailto:Franke.Phil89@googlemail.com"
-      target="_blank"
-      (mouseover)="showMail = true"
-      (mouseout)="showMail = false"
-    >
-      @if(showMail){
-      <img
-        src="./assets/img/social_icons/mail_lightblue_hover.png"
-        alt="mail"
-      />
-      } @else {
-      <img src="./assets/img/social_icons/mail_dark.png" alt="mail" />
-      }
-    </a>
+  <section class="icon-section"> 
+    <a class="mail-link"
+        href="mailto:Franke.Phil89@googlemail.com"
+        target="_blank"        
+      ></a>
 
-    <a
-      href="https://github.com/PhilscheLogik"
-      target="_blank"
-      (mouseover)="showGithub = true"
-      (mouseout)="showGithub = false"
-    >
-      @if(showGithub){
-      <img
-        src="./assets/img/social_icons/github_lightblue_hover.png"
-        alt="github"
-      />
-      } @else {
-      <img src="./assets/img/social_icons/github_dark.png" alt="github" />
-      }
-    </a>
+      <a class="github-link"
+        href="https://github.com/PhilscheLogik"
+        target="_blank"        
+      ></a>
 
-    <a
-      href="#"
-      target="_blank"
-      (mouseover)="showLinkedIn = true"
-      (mouseout)="showLinkedIn = false"
-    >
-      @if(showLinkedIn){
-      <img
-        src="./assets/img/social_icons/linkedin_lightblue_hover.png"
-        alt="Linked"
-      />
-      } @else {
-      <img src="./assets/img/social_icons/linkedin_dark.png" alt="LinkedIn" />
-      }
-    </a>
+      <a class="linkedin-link"
+        href="https://www.linkedin.com/in/philipp-franke-58b653350/"
+        target="_blank"        
+      ></a>
   </section>
 </section>
