@@ -184,7 +184,7 @@ h2 {
     border: 1px solid gray;
     background-color: $bg-color;
     color: gray;
-    cursor: not-allowed; // Button nicht klickbar
+    cursor: not-allowed;    
 
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 
@@ -309,7 +309,7 @@ h2 {
   z-index: 1001;
   text-align: center;
   width: 300px;
-  color:$text-color;
+  color: $text-color;
 }
 
 /* Modal-Titel */
@@ -320,7 +320,7 @@ h2 {
 /* Modal-Button */
 .modal button {
   background: $bg-color;
-  color:$text-color;
+  color: $text-color;
   border: $nav-color solid 1px;
   padding: 10px 20px;
   cursor: pointer;
@@ -331,12 +331,6 @@ h2 {
 .modal button:hover {
   background: rgba($nav-color, 0.12);
 }
-
-
-
-
-
-
 
 /*-------------------------------------------------------*/
 

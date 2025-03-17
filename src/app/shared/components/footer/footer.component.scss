@@ -8,9 +8,8 @@ footer {
 }
 
 .footer-section {
-  
-  // gap: 16px;  
-  @include displayFlex($jc:space-between);
+  // gap: 16px;
+  @include displayFlex($jc: space-between);
 
   padding: 71px 110px;
   max-width: 1440px;
@@ -22,7 +21,6 @@ a {
 }
 
 .logo-picture {
-  
   @include displayFlex($fd: column, $g: 0);
   width: 58px;
   height: 72px;
@@ -62,6 +60,19 @@ a {
   }
 }
 
+.info {
+  a,
+  p {
+    color: $gray;
+  }
+
+  a {
+    &:hover {
+      color: $text-color;
+    }
+  }
+}
+
 .icon-section {
   @include displayFlex();
   a {
@@ -97,10 +108,8 @@ a {
       grid-area: c;
     }
 
-    >div{
+    > div {
       width: 100%;
     }
-
-
   }
 }

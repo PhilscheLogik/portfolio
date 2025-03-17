@@ -111,7 +111,7 @@
 
       <p>
         {{ "contact.policy1" | translate }}
-        <a routerLink="policy">{{ "contact.policy2" | translate }}</a>
+        <a  (click)="scrollToTop()" routerLink="policy">{{ "contact.policy2" | translate }}</a>
         {{ "contact.policy3" | translate }}
       </p>
     </div>

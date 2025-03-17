@@ -1,11 +1,11 @@
 <div class="complete">
-    <div>
-        <a class="button" routerLink="">{{ "footer.back" | translate }}</a>
-      </div>
-  <section>
+  <div>
+    <a class="button" routerLink="">{{ "footer.back" | translate }}</a>
+  </div>
+  <div>
     <div id="generator_results">
       <div id="generator_results_content">
-        <h1>Datenschutzhinweise</h1>
+        <h2>Datenschutzhinweise</h2>
         <h2>Verantwortlicher</h2>
         <p>
           Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der
@@ -171,10 +171,11 @@
         </p>
       </div>
     </div>
-  </section>
-  <section>
-  </section>
+  </div>
   <div>
     <a class="button" routerLink="">{{ "footer.back" | translate }}</a>
+    <div (click)="scrollToTop()" class="button">
+      {{ "footer.top" | translate }}
+    </div>
   </div>
 </div>

@@ -1,41 +1,52 @@
 @import "./../../../styles.scss";
 
-.complete{
-    @include displayFlex($fd: column);
-    min-height: 95vh;
-    max-width: 1440px;
-    padding: 8px 16px;
+.complete {
+  @include displayFlex($fd: column);
+  min-height: 95vh;
+  max-width: 1440px;
+  padding: 8px 16px;
+  width: 95vw;
 }
 
-*{
-    font-family: jose;
+* {
+  font-family: jose;
+  box-sizing: border-box;
 }
 
-
-h2{
-    font-size: 42px;
-    margin-bottom: 40px;
-    margin-top: 50px;
-    font-family: anta;
+h2 {
+  font-size: clamp(18px, 5vw, 42px);
+  margin-bottom: 40px;
+  margin-top: 50px;
+  font-family: anta;
 }
 
-div,section{
-    margin: 16px auto;
+h3,
+h4 {
+  font-size: clamp(17px, 5vw, 38px);
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-family: anta;
 }
 
+p {
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+div,
+section {
+  margin: 16px auto;
+}
 
 .button {
-    width: 90px;
-    height: 38px;
-    padding: 8px 19.5px ;
-    border-radius: 100px;
-    border: 1px solid $nav-color;
-    color: $nav-color;
-    cursor: pointer; 
-    text-decoration: none;
-    
-  
-    &:hover {
-      background-color: rgba($nav-color, 0.12);
-    }
+  height: 38px;
+  padding: 8px 19.5px;
+  border-radius: 100px;
+  border: 1px solid $nav-color;
+  color: $nav-color;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgba($nav-color, 0.12);
   }
+}

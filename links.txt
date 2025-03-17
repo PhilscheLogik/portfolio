@@ -6,94 +6,16 @@ https://www.figma.com/design/qaO6bsto1TSRNDBMIxNdZN/Portfolio?node-id=5001-4597&
 
 bisherige Wahl (Version 2; Claudia Fohrer): https://www.figma.com/design/qaO6bsto1TSRNDBMIxNdZN/Portfolio?node-id=2183-3681&t=bIIEuKwdR2E35tRR-0
 
-Header -> im Desktop Version ist es fixed, aber in der Mobile Version nicht (Version 2; Claudia Fohrer)
-Header -> in der Desktop Version werden die Nav Elemente beim Klicken markiert, aber wenn man nach unten scrollt, ändern sie sich nicht (Version 2; Claudia Fohrer)
-Impressum -> imprint bzw. Impressum fehlt (Version 2; Claudia Fohrer)
 
-
-FRAGEN:
-    +   Soll im Ref die Projekte zu den Section Project verlinkt werden? -> nö, ist aber cool
-    +   Unterschiedliche Schriftart bei Desktop/Mobile für Überschrift Need a teamplayer? -> passe es an
-    +   Darf man overflow-y: auto;, wenn zu viel Text da ist? -> jo
-    +   Muss das Ziehen via Maus/Touch funktionieren oder reicht die scrollbar -x? -> einfach den Balken designen
-
-23.1.25
-    x   Arrow down erstellen (einfach bei Lass reden Button kopieren)
-    x   Arrow down verlinken (einfach bei Warum ich orientieren)
-    x   Animation Menü
-    x   Scroll nach oben beim Logo des Headers
-
-    x   Translation anschauen
-    x   Translation integrieren
-
-    x   https://all-inkl.com/whois/domaincheck/ bestellen 
-
-
-24.1.25
-    x   Header Button für die Sprache designen  
-    x   My Skills: 2 Bereiche (ähnlich wie why me section)
-    x   Icons hinzufügen und designen
-    x   Ei hinzufügen und designen
-    x   Texte hinzufügen
-    x   responsive gestalten
-
-    x   Karriere Reihe Modul 11 anschauen
-
-
-26.1.25
-    x   alle Sections erstellen (grob)
-    x   References Section Template erstellen
-    x   Translate hinzufügen 
-    x   responsiv gestalten
-    +4h
-
-
-27.1.25     
-    x   Kontakt Component HTML erstellen 
-    x   Kontakt Component gestalten Desktop (grob)    
-    x   Domain einrichten (Martin Meeting)
-        
-
-28.1.25 
-    x   Kontakt Component gestalten Desktop (fein)
-    x   Kontakt Formular Videos schauen begonnen    
-    x   Scrollbar bei ref. designen
-
-
-29.1.25 
-    
-    x   Kontakt Component gestalten Mobile (grob)
-    x   Kontakt Component gestalten Mobile (fein)
-
-
-30.1.25
-
-    x   Kontakt Formular Videos zu ende 
-    x   error msg einfügen
-
-31.1.25
-    x   error msg erscheinen bei dem korrketen Fehler
-
-
-    *   Kontakt responsive müsste noch 'Let us work together' rein
-    *   Footer mit Datenschutz auch in Englisch
+    *   Kontakt responsive müsste noch 'Let us work together' rein   
     *   why me: nach dem Icon Typewriter Effekt darauf 
     *   Überschrift bei Ref. soll sich mitziehen  
     *   Skill section responsive Span für die left Section ausblenden 
     *   www wird nicht angezeigt
+
     *   Header immer unten, auch bei großen Bildschirmen
     *   statt Projekt die Namen bei responsive anzeigen lassen (ist aber nicht mockup konform)
     *   Kontaktformular komplett rot nach dem senden -> muss wieder blau sein
     *   policy/Impressum ist beim klick unten -> sollte oben sein
     *   Impressum responsive machen - vergessen^^
-
-
-
-BUGS:
-* Comp. profile-card 
-    -- Button wie der mit dem Pfeil oder die Icons reagieren bei zu starker Hover Nutzung nicht korrekt 
-        -> Lösungsansatz: Bilder über SCSS separat ansprechen; den Button selbst erstellen.
-
-* 
-
 
