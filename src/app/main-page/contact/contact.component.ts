@@ -4,16 +4,12 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 
-import {
-  TranslatePipe,
-  TranslateDirective,
-  TranslateService,
-} from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [TranslatePipe, TranslateDirective, CommonModule, FormsModule,RouterLink],
+  imports: [TranslatePipe, CommonModule, FormsModule, RouterLink],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
@@ -57,14 +53,14 @@ export class ContactComponent {
     // console.log(ngForm.submitted, ngForm.form.valid);
 
     if (ngForm.submitted && ngForm.form.valid && this.contactData.isChecked) {
-
-      // console.log('jap, grün');      
+      // console.log('jap, grün');
 
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            this.submitted = false;
           },
           error: (error) => {
             console.error(error);
@@ -73,6 +69,7 @@ export class ContactComponent {
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
+      this.submitted = false;
     }
   }
 

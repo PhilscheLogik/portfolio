@@ -108,34 +108,35 @@
         />
         <span></span>
       </label>
-      
-        <p>
-          {{ "contact.policy1" | translate }}
-          <a routerLink="policy">{{ "contact.policy2" | translate }}</a>
-          {{ "contact.policy3" | translate }}
-        </p>       
 
+      <p>
+        {{ "contact.policy1" | translate }}
+        <a routerLink="policy">{{ "contact.policy2" | translate }}</a>
+        {{ "contact.policy3" | translate }}
+      </p>
     </div>
     @if (submitted && !isChecked.valid) {
-      <p class="check-error">{{ "contact.policyError" | translate }}</p>
-      }
+    <p class="check-error">{{ "contact.policyError" | translate }}</p>
+    }
 
     <div class="form-group full-width">
       <div class="button-div">
-        <button type="submit" [ngClass]="{ active: contactData.isChecked}">
+        <button type="submit" [ngClass]="{ active: contactData.isChecked }">
           {{ "contact.send" | translate }}
         </button>
       </div>
     </div>
   </form>
-  <div class="modal-overlay" *ngIf="showModal"></div>
 
-<!-- Das eigentliche Modal -->
-<div class="modal" *ngIf="showModal">
-  <div class="modal-content">
-    <h2>{{ "msg.head" | translate }}</h2>
-    <p>{{ "msg.msg" | translate }}</p>
-    <button (click)="closeModal()">OK</button>
+  @if (showModal){
+  <div class="modal-overlay"></div>
+  } @if (showModal){
+  <div class="modal">
+    <div class="modal-content">
+      <h2>{{ "msg.head" | translate }}</h2>
+      <p>{{ "msg.msg" | translate }}</p>
+      <button (click)="closeModal()">OK</button>
+    </div>
   </div>
-</div>
+  }
 </section>
