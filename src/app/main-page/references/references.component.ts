@@ -1,17 +1,11 @@
 import { Component } from '@angular/core';
-import {
-  TranslatePipe,
-  TranslateDirective,
-  TranslateService,
-} from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-references',
   standalone: true,
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [TranslatePipe],
   templateUrl: './references.component.html',
-  styleUrl: './references.component.scss'
+  styleUrl: './references.component.scss',
 })
-export class ReferencesComponent {
-
-}
+export class ReferencesComponent {}

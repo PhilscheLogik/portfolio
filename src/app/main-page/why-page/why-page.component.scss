@@ -15,15 +15,6 @@ h2 {
   margin-bottom: 90px;
 }
 
-.location-icon {
-  width: 4.65rem;
-  height: 4rem;
-
-  background-image: url("./../../../assets/img/icons/icon_location.svg");
-  background-size: cover;
-  background-position: center center;
-}
-
 .content {
   @include displayFlex($ai: flex-start);
 }
@@ -39,16 +30,37 @@ h2 {
   }
 }
 
+.location-icon {
+  width: 4.65rem;
+  height: 4rem;
+  background-size: cover;
+  background-position: center center;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  animation: blink 0.7s infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .right {
   @include displayFlex($fd: column, $jc: flex-end, $ai: flex-end);
   font-size: 18px;
   width: 50%;
   padding-left: 5%;
 
-  div{
+  div {
     margin-top: 30px;
   }
-
 }
 
 .button {
@@ -58,7 +70,6 @@ h2 {
   color: $nav-color;
   cursor: pointer;
   text-decoration: none;
-  
 
   &:hover {
     background-color: rgba($nav-color, 0.12);
@@ -68,8 +79,7 @@ h2 {
 /*-------------------------------------------------------*/
 /*-------------------------------------------------------*/
 
-@media (max-width: 1305px) {  
-
+@media (max-width: 1305px) {
   .left {
     font-size: 24px;
   }

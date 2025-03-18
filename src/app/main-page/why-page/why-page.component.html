@@ -2,10 +2,13 @@
   <h2>{{ "why.head" | translate }}</h2>
   <div class="content">
     <div class="left">
-      <div class="location-icon"></div>
+      <div
+        class="location-icon"
+        [ngStyle]="{ 'background-image': 'url(' + icons[currentIconIndex] + ')' }"
+      ></div>
       <p>
-        <span>{{ "why.leftPartOne" | translate }}</span>
-        {{ "why.leftPartTwo" | translate }}
+        <span class="highlight">{{ displayPartOne }}</span> {{ displayPartTwo }}
+        <span class="cursor">|</span>
       </p>
     </div>
 
