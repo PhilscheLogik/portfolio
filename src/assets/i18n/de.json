@@ -10,7 +10,7 @@
     "head": "Warum ich",
     "leftPartOne": "Ich bin",
     "leftPartTwo": "in Leipzig ..|",
-    "rightText": "Warum ich? Ich habe lange überlegt, aber noch keine Antwort darauf gefunden. Wenn jemanden etwas einfällt, schreibt mir gerne eine Nachricht - ich freue mich :)",
+    "rightText": "Ich bin ein begeisterter Lerner und liebe es, mich neuen Herausforderungen zu stellen. Meine Fähigkeit, komplexe Probleme wie Aufgaben in mathematischen Bereichen oder theoretischen Informatik, zu lösen, macht mich zu einem wertvollen Mitglied für Ihr Team. ",
     "button": "Lass uns reden"
   },
 
@@ -63,7 +63,7 @@
     "title2": "Wie ich meinen Arbeitsprozess organisiert habe",
     "title3": "Meine Erfahrung mit Gruppenarbeit",
 
-    "text1": "Der Pokédex Er bietet eine interaktive Möglichkeit, die faszinierende Welt der Pokémon zu erkunden. Entdecke alle deine Lieblings-Pokémon und ihre Fähigkeiten.",
+    "text1": "Der Pokédex bietet eine interaktive Möglichkeit, die faszinierende Welt der Pokémon zu erkunden. Entdecke alle deine Lieblings-Pokémon und ihre Fähigkeiten.",
     "text2": "Ich setze auf eine strukturierte Arbeitsweise. Täglich wird eine kurze Tagesplanung abgehalten, um fokussiert zu sein. Anschließend arbeite ich in kurzen, intensiven Intervallen. Regelmäßige Rückblicke helfen mir, meinen Prozess kontinuierlich zu verbessern.",
     "text3": "In der Zusammenarbeit mit anderen schätze ich besonders den Austausch von Ideen und Perspektiven. Durch tägliche Live-Calls können wir schnell auf Herausforderungen reagieren und gemeinsam innovative Lösungen finden.",
 
@@ -71,16 +71,16 @@
     "text5": "Ich setze auf eine strukturierte Arbeitsweise. Täglich wird eine kurze Tagesplanung abgehalten, um fokussiert zu sein. Anschließend arbeite ich in kurzen, intensiven Intervallen. Regelmäßige Rückblicke helfen mir, meinen Prozess kontinuierlich zu verbessern.",
     "text6": "In der Zusammenarbeit mit anderen schätze ich besonders den Austausch von Ideen und Perspektiven. Durch tägliche Live-Calls können wir schnell auf Herausforderungen reagieren und gemeinsam innovative Lösungen finden.",
 
-    "text7": "Hier wird künftig ein Text über das Projekt 'Join' stehen. Aus aktuellem Anlass ist dieses noch nicht fertiggestellt.",
+    "text7": "Sie benötigen eine Übersicht, um Aufgaben und Kontakte mittels eines Kanban System zu verwalten? Nutzen Sie einfach 'Join'. Egal, ob für die Leitung eines kleinen Teams oder die Organisation persönlicher Projekte, 'Join' passt sich den Bedürfnissen an. Teste Sie es jetzt kostenlos.",
     "text8": "Ich setze auf eine strukturierte Arbeitsweise. Täglich wird eine kurze Tagesplanung abgehalten, um fokussiert zu sein. Anschließend arbeite ich in kurzen, intensiven Intervallen. Regelmäßige Rückblicke helfen mir, meinen Prozess kontinuierlich zu verbessern.",
-    "text9": "Hier werden die künfitgen Erfahrungen bezüglich des Projektes und der Teamarbeit niedergeschrieben.",
+    "text9": "Im Team konnten wir uns mittels Scrum und Kanban organisiert, um effizient zu arbeiten. Während der Umsetzung nutzten wir ein Kanban-Board, um den aktuellen Stand der Tasks sichtbar zu machen. Durch regelmäßige Stand-up-Meetings konnten wir Hindernisse frühzeitig erkennen und gemeinsam Lösungen erarbeiten. Anhand konstruktiver Feedbacks in den Review-Sessions wurde der Entwicklungsprozess kontinuierlich verbessert.",
 
-    "text10": "Ich arbeite derzeit an der Entwicklung eines einfachen Kundenbeziehungsmanagementsystems mit CRUD-Funktionalität. Das ist für mich spannend und herausfordernd zugleich. Bei meiner Arbeit liegt der Schlüssel zum Erfolg in einer guten Planung und Ausführung von Aufgaben mit Drag-and-Drop-Funktionen, der Zuweisung von Benutzern und Kategorien.  ",
+    "text10": "Ich arbeite derzeit an der Entwicklung eines einfachen Kundenbeziehungsmanagementsystems mit CRUD-Funktionalität. Das ist für mich spannend und herausfordernd zugleich. Bei meiner Arbeit liegt der Schlüssel zum Erfolg in einer guten Planung und Ausführung von Aufgaben mit Drag-and-Drop-Funktionen, der Zuweisung von Benutzern und Kategorien.",
 
     "tech": "Technologien: ",
     "dura1": "Dauer: 1,5 Wochen",
     "dura2": "Dauer: 4 Wochen",
-    "dura3": "Dauer: X Wochen"
+    "dura3": "Dauer: 4 Wochen"
   },
   "footer": {
     "imprint": "Impressum",

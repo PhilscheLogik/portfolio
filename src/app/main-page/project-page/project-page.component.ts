@@ -1,15 +1,11 @@
 import { Component } from '@angular/core';
-import {
-  TranslatePipe,
-  TranslateDirective,
-  TranslateService,
-} from '@ngx-translate/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { ProjSectionComponent } from './proj-section/proj-section.component';
 
 @Component({
   selector: 'app-project-page',
   standalone: true,
-  imports: [TranslatePipe, TranslateDirective, ProjSectionComponent],
+  imports: [TranslatePipe, ProjSectionComponent],
   templateUrl: './project-page.component.html',
   styleUrl: './project-page.component.scss',
 })
@@ -25,7 +21,7 @@ export class ProjectPageComponent {
       this.loadTranslations();
     });
   }
-  
+
   loadTranslations(): void {
     this.projects = [
       {
@@ -36,7 +32,7 @@ export class ProjectPageComponent {
         imgPath: './../../../../assets/img/projects/Pokedex_cover.png',
         gitHubPath: 'https://github.com/PhilscheLogik/pokedex',
         projectPath: 'https://pokedex.franke-philipp.de/index.html',
-        name:this.translate.instant('proj.name'),
+        name: this.translate.instant('proj.name'),
         keyPoints: [
           {
             title: this.translate.instant('proj.title1'),
@@ -76,7 +72,7 @@ export class ProjectPageComponent {
         imgPath: './../../../../assets/img/projects/TSS_cover.png',
         gitHubPath: 'https://github.com/PhilscheLogik/game_JnR',
         projectPath: 'https://the-sunken-ships.franke-philipp.de/index.html',
-        name:this.translate.instant('proj.name'),
+        name: this.translate.instant('proj.name'),
         keyPoints: [
           {
             title: this.translate.instant('proj.title1'),
@@ -109,10 +105,10 @@ export class ProjectPageComponent {
         title: 'Join',
         duration: this.translate.instant('proj.dura3'),
         tech: this.translate.instant('proj.tech'),
-        imgPath: './../../../../assets/img/projects/CS_cover.png',
-        gitHubPath: 'https://github.com/PhilscheLogik',
-        projectPath: 'https://github.com/PhilscheLogik',
-        name:this.translate.instant('proj.name'),
+        imgPath: './../../../../assets/img/projects/join_cover.png',
+        gitHubPath: 'https://github.com/PhilscheLogik/Join',
+        projectPath: 'https://join.franke-philipp.de/',
+        name: this.translate.instant('proj.name'),
         keyPoints: [
           {
             title: this.translate.instant('proj.title1'),
@@ -149,7 +145,7 @@ export class ProjectPageComponent {
         title: 'other Projects',
         tech: this.translate.instant('proj.tech'),
         imgPath: './../../../../assets/img/projects/CS_cover.png',
-        name:this.translate.instant('proj.name'),
+        name: this.translate.instant('proj.name'),
         keyPoints: [
           {
             title: this.translate.instant('proj.title1'),

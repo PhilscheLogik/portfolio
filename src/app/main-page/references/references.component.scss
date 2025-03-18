@@ -128,8 +128,17 @@ span {
 }
 
 @media (max-width: 1200px) {
+  section {
+    position: relative;
+  }
+
   h4 {
     font-size: 24px;
+  }
+
+  .content {
+    width: 1012px;
+    overflow-x: auto;
   }
 
   .bubble {
@@ -144,36 +153,29 @@ span {
 }
 
 @media (max-width: 1000px) {
-  section {
-    > h3 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    > h4 {
-      text-align: center;
-      font-size: 18px;
-      margin-bottom: 50px;
-    }
-  }
-
-  .content {
-    overflow-x: auto;
-
-    text-align: left;
-    width: 1012px;
-    gap: 8px;
-
-    margin-right: 10px;
-  }
-
   h3 {
     font-size: 32px;
+    margin-bottom: 10px;
   }
 
   h4 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  h3,
+  h4 {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .content {
     text-align: left;
-    margin-bottom: 2px;
+    gap: 8px;
+
+    margin-right: 10px;
   }
 
   .bubble {
