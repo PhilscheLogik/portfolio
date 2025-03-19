@@ -6,9 +6,17 @@ section {
   width: 85vw;
   font-family: jose;
   overflow-x: auto;
+  scrollbar-width: none;
 
   > h4 {
     margin-bottom: 30px;
+  }
+
+  > h3,
+  > h4 {
+    position: sticky;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -47,6 +55,8 @@ span {
   @include displayFlex();
   gap: 37px;
   width: 100%;
+  min-width: 2050px;
+  // overflow-x: auto;
 
   div {
     min-width: 300px;
@@ -61,6 +71,7 @@ span {
 
   width: 378px;
   height: 383px;
+  hyphens: auto;
 
   text-align: center;
 
@@ -115,7 +126,12 @@ span {
     flex: 1;
     max-height: 130px;
     overflow-y: auto;
+    scrollbar-width: none;
     z-index: 2;
+  }
+
+  h4 {
+    max-width: 150px;
   }
 }
 
@@ -136,19 +152,8 @@ span {
     font-size: 24px;
   }
 
-  .content {
-    width: 1012px;
-    overflow-x: auto;
-  }
-
   .bubble {
     padding: 51.5px 20.5px;
-
-    p {
-      width: 100%;
-      font-size: 16px;
-      max-height: 100px;
-    }
   }
 }
 
@@ -164,13 +169,6 @@ span {
     margin-bottom: 50px;
   }
 
-  h3,
-  h4 {
-    position: sticky;
-    top: 0;
-    left: 0;
-  }
-
   .content {
     text-align: left;
     gap: 8px;
@@ -181,7 +179,7 @@ span {
   .bubble {
     align-items: flex-start;
     text-align: left;
-    padding: 40px 2px 45px 40px;
+    padding: 40px 20px 45px 70px;
 
     width: 290px;
     height: 271px;
@@ -191,6 +189,14 @@ span {
     p {
       text-align: left;
       width: 85%;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+    h4 {
+      margin-bottom: 8px;
     }
 
     &::before {

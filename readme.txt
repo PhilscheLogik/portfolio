@@ -10,8 +10,6 @@ bisherige Wahl (Version 2; Claudia Fohrer): https://www.figma.com/design/qaO6bst
 
     
 
-
-
 //18.März 25
 Was geändert wurde:
 *   Social-Icons oben rechts in der landing Page wurden durch a Tags ersetzen, 

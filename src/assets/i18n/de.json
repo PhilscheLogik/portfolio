@@ -28,17 +28,29 @@
     "project": "Projekt",
     "link": "Verknüpftes Profil",
 
-    "userName1": "Max Mustermann",
+    "userName1": "Dominik Marnet",
     "userProject1": "Join",
-    "userText1": "Phil ist total toll :D",
+    "userText1": "Da ich Phil bereits im Kochwelt-Projekt als Teammate hatte, habe ich mich sehr gefreut, als ich hörte, dass wir wieder in einem Team arbeiten dürfen. Die Zusammenarbeit war erneut sehr inspirierend und hat unglaublich viel Spaß gemacht. Als Scrum-Master in unserem Team hatte Phil immer ein sehr gutes Gespür für das gesamte Projekt und vor allem für die Fähigkeiten der anderen Teammitglieder. Neben seinen umfangreichen Kenntnissen im Bereich Coding hat er durch die effiziente Organisation nach dem Scrum-Prinzip wesentlich zum Erfolg unseres Projekts beigetragen.",
 
-    "userName2": "James Rugman",
-    "userProject2": "Kochwelt",
-    "userText2": "Phil weiß, wie man calc() benutzt.",
+    "userName2": "Martin Bock",
+    "userProject2": "Join",
+    "userText2": "Philipp verfügt über ein überdurchschnittliches Maß an Programmierkenntnissen und ist in der Lage, nahezu jedes Problem schnell zu lösen. Er recherchiert fehlende Informationen effizient und setzt diese zügig um. Dank seiner Expertise haben wir in unserem Projekt große Fortschritte gemacht, und das gesamte Team hat von seinem Wissen profitiert. Darüber hinaus bringt er eine freundliche, kompetente und ausgeglichene Art mit, die durch seinen großartigen Sinn für Humor ergänzt wird. Die Zusammenarbeit mit ihm war äußerst bereichernd, und ich bin dankbar, die Gelegenheit gehabt zu haben, mit ihm zu arbeiten.",
 
-    "userName3": "Alexander Möchtegern",
+    "userName3": "Normann Blum",
     "userProject3": "Join",
-    "userText3": "Phil hat das Team mit seiner großartigen Organisation und klaren Kommunikation wirklich zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen."
+    "userText3": "Mit Phil zu arbeiten, war einfach eine tolle Erfahrung! Er bringt nicht nur jede Menge technisches Know-how mit, sondern auch eine lockere, humorvolle Art, die das Teamklima enorm bereichert. Trotz seiner entspannten Art ist er immer voll engagiert und sorgt für Struktur und Effizienz im Entwicklungsprozess. Seine klare Kommunikation und sein lösungsorientiertes Denken machen die Zusammenarbeit nicht nur produktiv, sondern auch richtig angenehm.",
+
+    "userName4": "Dominik Marnet",
+    "userProject4": "Kochwelt",
+    "userText4": "Die Zusammenarbeit mit Philipp war stets sehr angenehm und inspirierend. Durch seinen Background im Bereich der Mathematik, konnte er gute Ideen einbringen die dem Team insgesamt die Arbeit erleichtert haben. Zudem ist er sehr Hilfsbereit und bringt die nötige Geduld mit, wenn jemand etwas nicht auf anhieb versteht.",
+
+    "userName5": "Ismail Baris",
+    "userProject5": "Kochwelt",
+    "userText5": "Mit Philipp zu arbeiten war immer eine Freude - er hat nicht nur ein tiefes fachliches Verständnis, sondern bringt auch kreative Lösungsansätze ein. ",
+
+    "userName6": "Cem Erdogmus",
+    "userProject6": "Kochwelt",
+    "userText6": "Phil war ein geselliges und hilfsbereites Teammitglied, dass die Zusammenarbeit stets angenehm gestaltete. An die Analyse und Lösung von Problemen ging er selbständig und mit großem Engagement heran und zeigte besondere Stärke bei der erfolgreichen Lösung von Problemen gemeinsam mit dem Team. "
   },
   "contact": {
     "head": "Mein Kontakt",

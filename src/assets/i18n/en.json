@@ -28,17 +28,29 @@
     "project": "Project",
     "link": "Linked In Profile",
 
-    "userName1": "Sahra Mueller",
+    "userName1": "Dominik Marnet",
     "userProject1": "Join",
-    "userText1": "Phil had to develop, format and deliver content in collaboration with the team members. He is a reliable and friendly person",
+    "userText1": "As I already had Phil as a teammate in the Kochwelt project, I was delighted when I heard that we would be working in a team again. The collaboration was again very inspiring and incredibly fun. As scrum master in our team, Phil always had a very good feel for the entire project and especially for the skills of the other team members. In addition to his extensive knowledge of coding, he contributed significantly to the success of our project by organising it efficiently according to the Scrum principle. Translated with DeepL.com (free version)",
 
-    "userName2": "Max Mustermann",
-    "userProject2": "Cooking World",
-    "userText2": "Phil knows how to use calc().",
+    "userName2": "Martin Bock",
+    "userProject2": "Join",
+    "userText2": "Philipp has above-average programming skills and is able to solve almost any problem quickly. He researches missing information efficiently and implements it quickly. Thanks to his expertise, we have made great progress in our project and the entire team has benefited from his knowledge. He also has a friendly, competent and even-tempered manner, which is complemented by his great sense of humour. Working with him has been extremely rewarding and I am grateful to have had the opportunity to work with him. Translated with DeepL.com (free version)",
 
-    "userName3": "Alexander Moechtegern",
+    "userName3": "Normann Blum",
     "userProject3": "Join",
-    "userText3": "Phil really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment."
+    "userText3": "Working with Phil was simply a great experience! Not only does he have a lot of technical expertise, he also has an easy-going, humorous manner that enriches the team atmosphere enormously. Despite his relaxed manner, he is always fully committed and ensures structure and efficiency in the development process. His clear communication and solution-orientated thinking make working together not only productive, but also really enjoyable. Translated with DeepL.com (free version)",
+
+    "userName4": "Dominik Marnet",
+    "userProject4": "Cooking World",
+    "userText4": "Working with Philipp was always very pleasant and inspiring. Thanks to his background in maths, he was able to contribute good ideas that made the team's work easier overall. He is also very helpful and has the necessary patience when someone doesn't understand something straight away. Translated with DeepL.com (free version)",
+
+    "userName5": "Ismail Baris",
+    "userProject5": "Cooking World",
+    "userText5": "It was always a pleasure to work with Philipp - he not only has a deep technical understanding, but also brings creative solutions to the table. Translated with DeepL.com (free version)",
+
+    "userName6": "Cem Erdogmus",
+    "userProject6": "Cooking World",
+    "userText6": "Phil was a sociable and helpful team member who consistently made collaboration enjoyable. He approached the analysis and resolution of issues independently and with great dedication, and demonstrated particular strength in successfully resolving problems together with the team. "
   },
   "contact": {
     "head": "Contact me",
