@@ -10,7 +10,7 @@
     "head": "Why me",
     "leftPartOne": "I am",
     "leftPartTwo": "located in Leipzig.",
-    "leftPartThree": "open to work remote.",
+    "leftPartThree": "open to work remotely.",
     "rightText": "I am an enthusiastic learner and love to take on new challenges. My ability to solve complex problems such as tasks in mathematical fields or theoretical computer science makes me a valuable member of your team. ",
     "button": "Let´s talk"
   },
@@ -54,7 +54,7 @@
   },
   "contact": {
     "head": "Contact me",
-    "text": "Still not sure if I'm the right person? Questions, interested in a collaboration or feedback on the portfolio? Simply fill in the form - you will receive a response as soon as possible.",
+    "text": "Still not sure if I'm the right person? Do you have Questions, interested in a collaboration or feedback on the portfolio? Simply fill in the form - you will receive a response as soon as possible.",
     "name": "Your name",
     "nameError": "Your name is required",
     "mail": "Your Email",
@@ -69,11 +69,13 @@
   },
   "proj": {
     "title": "My Projects",
+    "others": "Other Projects",
 
     "name": "Project",
+
     "title1": "About the project",
     "title2": "How I have organised my work process",
-    "title3": "My group work experience",
+    "title3": "My lesson from the project and the group work",
 
     "text1": "The Pokédex offers an interactive way to explore the fascinating world of Pokémon. Discover all your favourite Pokémon and their abilities.",
     "text2": "I rely on a structured way of working. A short daily planning session is held every day to keep me focussed. I then work in short, intensive intervals. Regular reviews help me to continuously improve my process.",

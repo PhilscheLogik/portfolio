@@ -11,7 +11,7 @@
     "leftPartOne": "Ich bin",
     "leftPartTwo": "in Leipzig sesshaft.",
     "leftPartThree": "offen für Remote Arbeit.",
-    "rightText": "Ich bin ein begeisterter Lerner und liebe es, mich neuen Herausforderungen zu stellen. Meine Fähigkeit, komplexe Probleme wie Aufgaben in mathematischen Bereichen oder theoretischen Informatik, zu lösen, macht mich zu einem wertvollen Mitglied für Ihr Team. ",
+    "rightText": "Ich bin ein begeisterter Lerner und liebe es, mich neuen Herausforderungen zu stellen. Meine Fähigkeit, komplexe Probleme wie Aufgaben in mathematischen Bereichen oder in der theoretischen Informatik, zu lösen, macht mich zu einem wertvollen Mitglied für Ihr Team. ",
     "button": "Lass uns reden"
   },
 
@@ -34,7 +34,7 @@
 
     "userName2": "Martin Bock",
     "userProject2": "Join",
-    "userText2": "Philipp verfügt über ein überdurchschnittliches Maß an Programmierkenntnissen und ist in der Lage, nahezu jedes Problem schnell zu lösen. Er recherchiert fehlende Informationen effizient und setzt diese zügig um. Dank seiner Expertise haben wir in unserem Projekt große Fortschritte gemacht, und das gesamte Team hat von seinem Wissen profitiert. Darüber hinaus bringt er eine freundliche, kompetente und ausgeglichene Art mit, die durch seinen großartigen Sinn für Humor ergänzt wird. Die Zusammenarbeit mit ihm war äußerst bereichernd, und ich bin dankbar, die Gelegenheit gehabt zu haben, mit ihm zu arbeiten.",
+    "userText2": "Philipp verfügt über ein überdurchschnittliches Maß an Programmier Kenntnissen und ist in der Lage, nahezu jedes Problem schnell zu lösen. Er recherchiert fehlende Informationen effizient und setzt diese zügig um. Dank seiner Expertise haben wir in unserem Projekt große Fortschritte gemacht, und das gesamte Team hat von seinem Wissen profitiert. Darüber hinaus bringt er eine freundliche, kompetente und ausgeglichene Art mit, die durch seinen großartigen Sinn für Humor ergänzt wird. Die Zusammenarbeit mit ihm war äußerst bereichernd, und ich bin dankbar, die Gelegenheit gehabt zu haben, mit ihm zu arbeiten.",
 
     "userName3": "Normann Blum",
     "userProject3": "Join",
@@ -69,12 +69,13 @@
   },
   "proj": {
     "title": "Meine Projekte",
+    "others": "Laufende Projekte",
 
     "name": "Projekt",
 
     "title1": "Über das Projekt",
     "title2": "Wie ich meinen Arbeitsprozess organisiert habe",
-    "title3": "Meine Erfahrung mit Gruppenarbeit",
+    "title3": "Meine Lektion aus dem Projekt und der Gruppenarbeit",
 
     "text1": "Der Pokédex bietet eine interaktive Möglichkeit, die faszinierende Welt der Pokémon zu erkunden. Entdecke alle deine Lieblings-Pokémon und ihre Fähigkeiten.",
     "text2": "Ich setze auf eine strukturierte Arbeitsweise. Täglich wird eine kurze Tagesplanung abgehalten, um fokussiert zu sein. Anschließend arbeite ich in kurzen, intensiven Intervallen. Regelmäßige Rückblicke helfen mir, meinen Prozess kontinuierlich zu verbessern.",
@@ -86,7 +87,7 @@
 
     "text7": "Sie benötigen eine Übersicht, um Aufgaben und Kontakte mittels eines Kanban System zu verwalten? Nutzen Sie einfach 'Join'. Egal, ob für die Leitung eines kleinen Teams oder die Organisation persönlicher Projekte, 'Join' passt sich den Bedürfnissen an. Teste Sie es jetzt kostenlos.",
     "text8": "Ich setze auf eine strukturierte Arbeitsweise. Täglich wird eine kurze Tagesplanung abgehalten, um fokussiert zu sein. Anschließend arbeite ich in kurzen, intensiven Intervallen. Regelmäßige Rückblicke helfen mir, meinen Prozess kontinuierlich zu verbessern.",
-    "text9": "Im Team konnten wir uns mittels Scrum und Kanban organisiert, um effizient zu arbeiten. Während der Umsetzung nutzten wir ein Kanban-Board, um den aktuellen Stand der Tasks sichtbar zu machen. Durch regelmäßige Stand-up-Meetings konnten wir Hindernisse frühzeitig erkennen und gemeinsam Lösungen erarbeiten. Anhand konstruktiver Feedbacks in den Review-Sessions wurde der Entwicklungsprozess kontinuierlich verbessert.",
+    "text9": "Im Team konnten wir uns mittels Scrum organisiert, um effizient mittels Angular zu arbeiten. Während der Umsetzung nutzten wir ein Kanban-Board, um den aktuellen Stand der Tasks sichtbar zu machen. Durch regelmäßige Stand-up-Meetings konnten wir Hindernisse frühzeitig erkennen und gemeinsam Lösungen erarbeiten. Anhand konstruktiver Feedbacks in den Review-Sessions wurde der Entwicklungsprozess kontinuierlich verbessert.",
 
     "text10": "Ich arbeite derzeit an der Entwicklung eines einfachen Kundenbeziehungsmanagementsystems mit CRUD-Funktionalität. Das ist für mich spannend und herausfordernd zugleich. Bei meiner Arbeit liegt der Schlüssel zum Erfolg in einer guten Planung und Ausführung von Aufgaben mit Drag-and-Drop-Funktionen, der Zuweisung von Benutzern und Kategorien.",
 

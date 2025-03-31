@@ -31,7 +31,7 @@ export class ProjectPageComponent {
         tech: this.translate.instant('proj.tech'),
         imgPath: './../../../../assets/img/projects/Pokedex_cover.png',
         gitHubPath: 'https://github.com/PhilscheLogik/pokedex',
-        projectPath: 'https://pokedex.franke-philipp.de/index.html',
+        projectPath: 'https://pokedex.franke-philipp.de/',
         name: this.translate.instant('proj.name'),
         keyPoints: [
           {
@@ -71,7 +71,7 @@ export class ProjectPageComponent {
         tech: this.translate.instant('proj.tech'),
         imgPath: './../../../../assets/img/projects/TSS_cover.png',
         gitHubPath: 'https://github.com/PhilscheLogik/game_JnR',
-        projectPath: 'https://the-sunken-ships.franke-philipp.de/index.html',
+        projectPath: 'https://the-sunken-ships.franke-philipp.de/',
         name: this.translate.instant('proj.name'),
         keyPoints: [
           {
@@ -142,7 +142,7 @@ export class ProjectPageComponent {
       },
       {
         id: 4,
-        title: 'other Projects',
+        title: this.translate.instant('proj.others'),
         tech: this.translate.instant('proj.tech'),
         imgPath: './../../../../assets/img/projects/CS_cover.png',
         name: this.translate.instant('proj.name'),

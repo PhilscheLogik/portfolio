@@ -6,7 +6,7 @@ section {
   width: 85vw;
   font-family: jose;
   overflow-x: auto;
-  scrollbar-width: none;
+  // scrollbar-width: none;
 
   > h4 {
     margin-bottom: 30px;
@@ -126,7 +126,8 @@ span {
     flex: 1;
     max-height: 130px;
     overflow-y: auto;
-    scrollbar-width: none;
+    // scrollbar-width: none;
+    padding-right: 4px;
     z-index: 2;
   }
 

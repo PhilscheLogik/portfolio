@@ -11,7 +11,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 
-  scrollbar-color: $nav-color $bg-color;
+  scrollbar-color: $nav-color $bg-color-lighter;
   scrollbar-width: thin;
 }
 
@@ -27,21 +27,3 @@ body {
 section {
   max-width: 1440px;
 }
-
-// ------------------------
-
-// section {
-//   border: 2px lightblue solid;
-// }
-
-// div {
-//   border: 2px crimson solid;
-// }
-
-// img {
-//   border: 2px lightsalmon solid;
-// }
-
-// p{
-//   border: 2px lightyellow solid;
-// }
