@@ -1,12 +1,10 @@
 @import "./../../../../styles.scss";
 
-
-
 :host {
   display: block;
   position: sticky;
   top: 0;
-  z-index: 1000; // Damit der Header über anderen Elementen bleibt 
+  z-index: 1000; // Damit der Header über anderen Elementen bleibt
 }
 
 .burger,
@@ -19,7 +17,6 @@
 .translate2 {
   cursor: pointer;
   @include displayFlex();
-  
 
   div {
     color: $bg-color;
@@ -32,7 +29,6 @@
     &.active {
       color: $text-color;
 
-      
       &::after {
         content: "";
         position: absolute;
@@ -44,8 +40,7 @@
         background-image: url("./../../../../assets/img/background_mark/ellipse.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        z-index: 1;        
-
+        z-index: 1;
       }
     }
   }
@@ -105,7 +100,7 @@
 }
 
 header {
-  min-height: 104px; 
+  min-height: 104px;
   width: 100%;
   font-size: 18px;
   background: $nav-color;
@@ -228,17 +223,17 @@ header {
 /*-------------------------------------------------------*/
 
 @media (max-width: 1000px) {
-
   :host {
     display: block;
-    position:static;   
+    position: static;
   }
 
-
   header {
-    background: none;
-    @include posi($p: absolute, $t: 4%, $l: 0);
+    background: $bg-color;
+    @include posi($p: fixed, $t: 0, $l: 0);
+    padding-top: 30px;
     min-height: 85px;
+    z-index: 1001;
 
     .header-section {
       justify-content: space-between;
