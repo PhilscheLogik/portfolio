@@ -78,16 +78,16 @@
     "title3": "Meine Lektion aus dem Projekt und der Gruppenarbeit",
 
     "text1": "Der Pokédex bietet eine interaktive Möglichkeit, die faszinierende Welt der Pokémon zu erkunden. Entdecke alle deine Lieblings-Pokémon und ihre Fähigkeiten.",
-    "text2": "Ich setze auf eine strukturierte Arbeitsweise. Täglich wird eine kurze Tagesplanung abgehalten, um fokussiert zu sein. Anschließend arbeite ich in kurzen, intensiven Intervallen. Regelmäßige Rückblicke helfen mir, meinen Prozess kontinuierlich zu verbessern.",
-    "text3": "In der Zusammenarbeit mit anderen schätze ich besonders den Austausch von Ideen und Perspektiven. Durch tägliche Live-Calls können wir schnell auf Herausforderungen reagieren und gemeinsam innovative Lösungen finden.",
+    "text2": "Zunächst habe ich die API-Struktur analysiert und Testfunktionen programmiert, um den korrekten Datenabruf zu ermöglichen. Nach erfolgreichen Tests habe ich das Design eigenständig gestaltet, da keine Vorgaben vorhanden waren.",
+    "text3": "Dieses Projekt habe ich größtenteils eigenständig umgesetzt. Das Ziel war es, den Umgang mit der Datenstruktur aus der API zu verstehen und in relevante Informationen darzustellen. Die regelmäßigen Live-Calls im Team halfen mir, meine Ansätze zu hinterfragen und zu optimieren.",
 
     "text4": "Tauche ein in die Tiefen des Ozeans und erkunde versunkene Schiffe in diesem spannenden 2D-Sidescroller namens 'Die versunkenen Schiffe'! Wehre gefährliche Kreaturen ab und enthülle die Geheimnisse der Tiefe.",
-    "text5": "Ich setze auf eine strukturierte Arbeitsweise. Täglich wird eine kurze Tagesplanung abgehalten, um fokussiert zu sein. Anschließend arbeite ich in kurzen, intensiven Intervallen. Regelmäßige Rückblicke helfen mir, meinen Prozess kontinuierlich zu verbessern.",
-    "text6": "In der Zusammenarbeit mit anderen schätze ich besonders den Austausch von Ideen und Perspektiven. Durch tägliche Live-Calls können wir schnell auf Herausforderungen reagieren und gemeinsam innovative Lösungen finden.",
+    "text5": "Nach der Anfertigung einer Basisversion mit Canvas wurde das Game schrittweise mit zusätzlichen Features erweitert. Dabei kamen objektorientierte Programmierung zum Einsatz, Animationen wurden durch die Bewegung einzelner Bildframes realisiert, und kleinere Pixelgrafiken wie Coins eigens gestaltet.",
+    "text6": "Ein weiteres Projekt, das größtenteils eigenständig umgesetzt wurde. Durch die Arbeit an einer Basisversion und dem Feedback aus den täglichen Live-Calls konnten Probleme identifiziert, Lösungen gefunden und neue Features implementiert werden.",
 
     "text7": "Sie benötigen eine Übersicht, um Aufgaben und Kontakte mittels eines Kanban System zu verwalten? Nutzen Sie einfach 'Join'. Egal, ob für die Leitung eines kleinen Teams oder die Organisation persönlicher Projekte, 'Join' passt sich den Bedürfnissen an. Teste Sie es jetzt kostenlos.",
-    "text8": "Ich setze auf eine strukturierte Arbeitsweise. Täglich wird eine kurze Tagesplanung abgehalten, um fokussiert zu sein. Anschließend arbeite ich in kurzen, intensiven Intervallen. Regelmäßige Rückblicke helfen mir, meinen Prozess kontinuierlich zu verbessern.",
-    "text9": "Im Team konnten wir uns mittels Scrum organisiert, um effizient mittels Angular zu arbeiten. Während der Umsetzung nutzten wir ein Kanban-Board, um den aktuellen Stand der Tasks sichtbar zu machen. Durch regelmäßige Stand-up-Meetings konnten wir Hindernisse frühzeitig erkennen und gemeinsam Lösungen erarbeiten. Anhand konstruktiver Feedbacks in den Review-Sessions wurde der Entwicklungsprozess kontinuierlich verbessert.",
+    "text8": "Das Projekt wurde in drei Sprints aufgeteilt und im Team umgesetzt. Ein Kanban-Board half dabei, den aktuellen Stand der Tasks transparent zu halten. Herausfordernde Aufgaben bewältigten wir gemeinsam in Gruppenarbeit.",
+    "text9": "Im Team konnten wir uns mittels Scrum organisiert, um effizient mittels Angular zu arbeiten. Durch regelmäßige Stand-up-Meetings konnten wir Hindernisse frühzeitig erkennen und gemeinsam Lösungen erarbeiten. Anhand konstruktiver Feedbacks in den Review-Sessions wurde der Entwicklungsprozess kontinuierlich verbessert.",
 
     "text10": "Ich arbeite derzeit an der Entwicklung eines einfachen Kundenbeziehungsmanagementsystems mit CRUD-Funktionalität. Das ist für mich spannend und herausfordernd zugleich. Bei meiner Arbeit liegt der Schlüssel zum Erfolg in einer guten Planung und Ausführung von Aufgaben mit Drag-and-Drop-Funktionen, der Zuweisung von Benutzern und Kategorien.",
 

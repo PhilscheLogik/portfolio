@@ -78,16 +78,16 @@
     "title3": "My lesson from the project and the group work",
 
     "text1": "The Pokédex offers an interactive way to explore the fascinating world of Pokémon. Discover all your favourite Pokémon and their abilities.",
-    "text2": "I rely on a structured way of working. A short daily planning session is held every day to keep me focussed. I then work in short, intensive intervals. Regular reviews help me to continuously improve my process.",
-    "text3": "When working with others, I particularly value the exchange of ideas and perspectives. Daily live calls allow us to react quickly to challenges and find innovative solutions together.",
+    "text2": "First, I analysed the API structure and programmed test functions to enable correct data retrieval. After successful testing, I created the design independently as there were no specifications.",
+    "text3": "I implemented this project largely independently. The goal was to understand how to handle the data structure from the API and visualise it in relevant information. The regular live calls in the team helped me to scrutinise and optimise my approaches.",
 
     "text4": "Dive into the depths of the ocean and explore sunken ships in this exciting 2D sidescroller called ‘The Sunken Ships’! Fend off dangerous creatures and uncover the secrets of the deep.",
-    "text5": "I rely on a structured way of working. A short daily planning session is held every day to keep me focussed. I then work in short, intensive intervals. Regular reviews help me to continuously improve my process.",
-    "text6": "When working with others, I particularly value the exchange of ideas and perspectives. Daily live calls allow us to react quickly to challenges and find innovative solutions together.",
+    "text5": "After creating a basic version with canvas, the game was gradually expanded with additional features. Object-oriented programming was used, animations were realised by moving individual image frames, and smaller pixel graphics such as coins were specially designed.",
+    "text6": "Another project that was largely implemented independently. By working on a basic version and receiving feedback from the daily live calls, problems were identified, solutions found and new features implemented.",
 
     "text7": "Do you need an overview to manage tasks and contacts using a Kanban system? Simply use ‘Join’. Whether for managing a small team or organising personal projects, ‘Join’ adapts to your needs. Try it now for free.",
-    "text8": "I rely on a structured way of working. A short daily planning session is held every day to keep me focussed. I then work in short, intensive intervals. Regular reviews help me to continuously improve my process.",
-    "text9": "As a team, we were able to organise ourselves using Scrum and Kanban in order to work efficiently. During implementation, we used a Kanban board to visualise the current status of the tasks. Regular stand-up meetings enabled us to recognise obstacles at an early stage and work out solutions together. The development process was continuously improved based on constructive feedback in the review sessions.",
+    "text8": "The project was divided into three sprints and implemented as a team. A Kanban board helped to keep the current status of the tasks transparent. We tackled challenging tasks together in group work.",
+    "text9": "As a team, we were able to organise ourselves using Scrum and Kanban in order to work efficiently. Regular stand-up meetings enabled us to recognise obstacles at an early stage and work out solutions together. The development process was continuously improved based on constructive feedback in the review sessions.",
 
     "text10": "I am currently working on developing a Simple Customer Relationship Management system working with CRUD functionality.This is for me both exciting and challenging. In my work the key to success lies in a good planning and execution tasks using drag and drop functions, assign users and categories.",
 
