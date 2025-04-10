@@ -25,10 +25,20 @@ export class HeaderComponent {
     this.currentItem = index;
   }
 
+  // scrollTo(id: string) {
+  //   const element = document.getElementById(id);
+  //   if (element) {
+  //     element.scrollIntoView();
+  //   }
+  // }
+
   scrollTo(id: string) {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView();
+      const yOffset = -104;
+      const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+
+      window.scrollTo({ top: y, behavior: 'smooth' });
     }
   }
 

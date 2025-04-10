@@ -15,8 +15,7 @@ export class ProjectPageComponent {
 
   constructor(private translate: TranslateService) {
     this.loadTranslations();
-
-    // Falls sich die Sprache ändert, müssen wir die Projekte neu übersetzen
+    
     this.translate.onLangChange.subscribe(() => {
       this.loadTranslations();
     });
