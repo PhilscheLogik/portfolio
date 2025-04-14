@@ -8,6 +8,10 @@ section {
   position: relative;
 }
 
+h3 {
+  color: $nav-color;
+}
+
 .button {
   width: 38px;
   height: 89px;
@@ -184,7 +188,7 @@ h2 {
     border: 1px solid gray;
     background-color: $bg-color;
     color: gray;
-    cursor: not-allowed;    
+    cursor: not-allowed;
 
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 
