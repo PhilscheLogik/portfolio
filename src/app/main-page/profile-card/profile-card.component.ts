@@ -24,13 +24,16 @@ export class ProfileCardComponent {
 
     this.showLogo = false;
 
-    this.showButton = false;  
+    this.showButton = false;
   }
 
   scrollTo(id: string) {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView();
+      const yOffset = -104;
+      const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+
+      window.scrollTo({ top: y, behavior: 'smooth' });
     }
   }
 }
