@@ -7,11 +7,16 @@ section {
   color: $text-color;
   background-color: $bg-color;
   height: calc(100vh - 214px);
+  margin: auto;
 }
 
 .pw-container {
-  width: 300px;
+  width: 400px;
   @include displayFlex($fd: column, $g: 30px);
+
+  @media (max-width: 500px) {
+    width: 250px;
+  }
 
   h3 {
     width: 100%;
@@ -26,33 +31,29 @@ section {
     background-color: $nav-color;
     border: none;
     font-size: 20px;
+    border-radius: 8px;
   }
 }
 
 button {
   padding: 13px 30px;
-  border-radius: 100px;
-  border: 1px solid $nav-color;
-  cursor: pointer;
   font-size: 16px;
-  color: $nav-color;
-  background-color: $bg-color;
-
-  &:hover {
-    background-color: rgba($nav-color, 0.5);
-  }
+  background-color: $bg-color; 
 }
 
 .button {
   width: 90px;
   height: 38px;
   padding: 8px 19.5px;
+}
+
+button,
+.button {
   border-radius: 100px;
   border: 1px solid $nav-color;
-  color: $nav-color;
   cursor: pointer;
+  color: $nav-color;
   text-decoration: none;
-
   &:hover {
     background-color: rgba($nav-color, 0.12);
   }
@@ -61,6 +62,13 @@ button {
 .tg {
   border-collapse: collapse;
   border-spacing: 0;
+
+  @media (max-width: 410px) {
+    width: 100%;
+    display: inline-block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 
   td {
     border-color: $text-color;
