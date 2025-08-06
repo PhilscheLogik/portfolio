@@ -18,6 +18,10 @@ p {
   font-size: 20px;
   margin-bottom: 20px;
   font-family: jose;
+  a {
+    text-decoration: none;
+    cursor: default;
+  }
 }
 
 div,

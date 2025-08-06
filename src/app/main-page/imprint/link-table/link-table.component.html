@@ -1,0 +1,61 @@
+<section>
+  @if(!isPasswordCorrect()){
+  <div class="pw-container">
+    <h3>- Passwortabfrage -</h3>
+    <p>
+      Bitte geben Sie das Passwort ein, um fortzufahren. Eine Bestätigung via
+      <i>'Enter'</i> oder einem <i>Button</i> wird nicht benötigt!
+    </p>
+    <input type="{{ visibility }}" [(ngModel)]="password" />
+    <button (click)="toggleVisibility()">
+      Sichtbarkeit des Passworts ändern.
+    </button>
+  </div>
+  }
+  <!--  -->
+  @if(isPasswordCorrect()){
+  <table class="tg">
+    <thead>
+      <tr>
+        <td class="tg-head">Aufgabenbereich</td>
+        <td class="tg-head">Link</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bewerbungsliste</td>
+        <td>
+          <a
+            href="https://docs.google.com/spreadsheets/d/1b3q8PWzCGB2oGdI7vfpuVhIbq3tt0YdPaoGVAFcSTpE/edit?usp=sharing"
+            target="_blank"
+            >GoogleSheetsJobs</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>Lebenslauf</td>
+        <td>
+          <a
+            href="https://docs.google.com/document/d/1HzwUdTFOrqeZmB8k-6SZqzKDAOHQpb2w/edit?usp=sharing&ouid=105543785133194407605&rtpof=true&sd=true"
+            target="_blank"
+            >GoogleDocsCV</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>Anschreiben</td>
+        <td>
+          <a
+            href="https://www.dropbox.com/scl/fi/hu708frpu8joznhnte5ym/Anschreiben_singularIT.pdf?rlkey=36chq5kc0zv315dbkh6naqij0&dl=0"
+            target="_blank"
+            >Dropbox</a
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  }
+  <div>
+    <a class="button" routerLink="">{{ "footer.back" | translate }}</a>
+  </div>
+</section>

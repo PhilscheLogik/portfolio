@@ -1,0 +1,89 @@
+@import "./../../../../styles.scss";
+
+section {
+  padding: 10px;
+  font-family: jose;
+  @include displayFlex($fd: column, $g: 30px);
+  color: $text-color;
+  background-color: $bg-color;
+  height: calc(100vh - 214px);
+}
+
+.pw-container {
+  width: 300px;
+  @include displayFlex($fd: column, $g: 30px);
+
+  h3 {
+    width: 100%;
+    font-family: anta;
+    font-size: 24px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px 10px;
+    color: $text-color;
+    background-color: $nav-color;
+    border: none;
+    font-size: 20px;
+  }
+}
+
+button {
+  padding: 13px 30px;
+  border-radius: 100px;
+  border: 1px solid $nav-color;
+  cursor: pointer;
+  font-size: 16px;
+  color: $nav-color;
+  background-color: $bg-color;
+
+  &:hover {
+    background-color: rgba($nav-color, 0.5);
+  }
+}
+
+.button {
+  width: 90px;
+  height: 38px;
+  padding: 8px 19.5px;
+  border-radius: 100px;
+  border: 1px solid $nav-color;
+  color: $nav-color;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgba($nav-color, 0.12);
+  }
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  td {
+    border-color: $text-color;
+    border-style: ridge;
+    border-width: 2px;
+    font-family: jose;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 20px 15px;
+    word-break: normal;
+
+    a {
+      color: $nav-color;
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+  .tg-head {
+    text-align: center;
+    vertical-align: top;
+    font-family: anta;
+    font-size: 20px;
+    background-color: $nav-color;
+  }
+}
