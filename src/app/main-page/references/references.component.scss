@@ -58,7 +58,7 @@ span {
   min-width: 2050px;
   // overflow-x: auto;
 
-  div {
+  .bubble {
     min-width: 300px;
   }
 }
@@ -114,6 +114,26 @@ span {
 
     &::after {
       opacity: 1;
+    }    
+  }
+
+  .zoom {    
+    background-image: url("./../../../assets/img/icons/zoom.svg");
+    width: 30px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 40%;
+    left: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: zoom-in;
+    z-index: 2;
+    border-radius: 16px;
+
+    &:hover {
+      border: 1px solid $nav-color;
+      transform: scale(1.2);
     }
   }
 
@@ -190,6 +210,10 @@ span {
     p {
       text-align: left;
       width: 85%;
+    }
+
+    .zoom{
+
     }
 
     h3 {
