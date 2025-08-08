@@ -8,6 +8,14 @@ section {
   overflow-x: auto;
   // scrollbar-width: none;
 
+  .overlay{
+
+    
+
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+  }
+
   > h4 {
     margin-bottom: 30px;
   }
@@ -213,6 +221,7 @@ span {
     }
 
     .zoom{
+      left: 24px;
 
     }
 
