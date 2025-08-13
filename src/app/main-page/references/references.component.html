@@ -2,7 +2,7 @@
   <div
     class="overlay"
     (click)="changeText('')"
-    [ngClass]="{ d_none: text == '' }"
+    [ngClass]="{ d_none: text == '', flex: text!== '' }"
   >
    <span>{{ text }}</span> 
   </div>

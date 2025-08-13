@@ -27,3 +27,10 @@ body {
 section {
   max-width: 1440px;
 }
+
+.flex{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
