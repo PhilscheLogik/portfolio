@@ -24,7 +24,7 @@ section {
       display: inline-block;
       border: 1px solid $text-color;
       color: $text-color;
-      border-radius: 8px 50px 25px 12px;
+      border-radius: 95% 5% 95% 5% / 5% 85% 15% 95%;
       background-color: $bg-color;
       font-size: 24px;
       max-height: 300px;
@@ -86,7 +86,6 @@ span {
   gap: 37px;
   width: 100%;
   min-width: 2050px;
-  // overflow-x: auto;
 
   .bubble {
     min-width: 300px;
@@ -275,5 +274,11 @@ span {
 
   .bubble {
     padding-right: 20px;
+  }
+
+  .overlay {
+    span {
+      padding-right: 10px;
+    }
   }
 }
